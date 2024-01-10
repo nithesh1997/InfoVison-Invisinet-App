@@ -1,0 +1,55 @@
+{
+    "files.eol": "\r\n",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "explorer.compactFolders": false,
+    "explorer.excludeGitIgnore": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[svg]": {
+        "editor.defaultFormatter": "jock.svg"
+    },
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        "**/server": false,
+        // Hide everything in /vendor, except the "laravel" and "livewire" folder.
+        "**/vendor/{[^l],?[^ai]}*": true,
+        // Hide everything in /public, except "index.php"
+        "**/build/{[^i],?[^n]}*": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/_ide_helper.php": true,
+        "**/composer.lock": true,
+        "**/package-lock.json": true,
+        "storage": true
+    },
+    "peacock.affectStatusBar": false,
+    "peacock.color": "#B49594",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#c9b3b2",
+        "activityBar.background": "#c9b3b2",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#5c835e",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#c9b3b2",
+        "titleBar.activeBackground": "#b49594",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#b4959499",
+        "titleBar.inactiveForeground": "#15202b99"
+    }
+}

@@ -1,0 +1,2489 @@
+{
+  "commons": {
+    "notConfiguredText": "Not Configured",
+    "setupText": "Setup",
+    "configureText": "Configure",
+    "editText": "Edit",
+    "deleteText": "Delete",
+    "saveText": "Save",
+    "savingText": "Saving...",
+    "resetText": "Reset",
+    "retryText": "Retry",
+    "Not Set": "Not Set",
+    "Retry Successful": "Retry Successful",
+    "doneText": "Done",
+    "appName": "{{ ProjectName }} Management Console",
+    "loadingText": "Loading",
+    "loadingPageText": "Loading an awesome experience for you",
+    "successText": "Success",
+    "continueText": "Continue",
+    "confirmText": "Confirm",
+    "cancelText": "Cancel",
+    "errorText": "Error",
+    "okayText": "Okay",
+    "serverText": "Controller",
+    "gatewayText": "{{ GATEWAY }}",
+    "viewText": "View",
+    "enableText": "Enable",
+    "disableText": "Disable",
+    "enabledText": "Enabled",
+    "disabledText": "Disabled",
+    "enablingText": "Enabling",
+    "disablingText": "Disabling",
+    "rightsReservedText": "All Rights Reserved",
+    "selectText": "Select Text",
+    "deselectText": "Deselect Text",
+    "excludeFrom": "Exclude From",
+    "includeIn": "Include In",
+    "ApplyText": "Apply",
+    "SearchText": "Search",
+    "TooltipCancel": "Cancel",
+    "TooltipSave": "Save",
+    "TaskCompleted": "Task Completed",
+    "errorAlertTitle": "ERROR..!",
+    "login": {
+      "title": "Login",
+      "warning": "The user '{{ userName }}' is restricted to login."
+    },
+    "logout": {
+      "overtime": {
+        "message": "You were logged out due to security reasons. Please sign-in again to resume your work."
+      },
+      "warning": {
+        "restricted": "Logging out in ⏱️ {{ timeout }}"
+      }
+    },
+    "gateway": {
+      "prompt": {
+        "certificate": {
+          "expired": {
+            "title": "Invisigate Certificate Expiry",
+            "case1": {
+              "error": {
+                "0": "{{ GATEWAY }} <0>({{ gatewayName }})</0> expiring today",
+                "1": "Please update certificate to avoid inaccessibility to the portal."
+              }
+            },
+            "case2": {
+              "error": {
+                "0": "{{ GATEWAY }} <0>({{ gatewayName }})</0> expired <0>{{ daysToGo }}</0> day(s) ago.",
+                "1": "Please update certificate to avoid inaccessibility to the portal."
+              }
+            },
+            "case3": {
+              "error": {
+                "0": "{{ GATEWAY }} <0>({{ gatewayName }})</0> is about to expire in <0>{{ gatewayExpiryDays }}</0> day(s).",
+                "1": "Please update certificate to avoid inaccessibility to the portal."
+              }
+            }
+          },
+          "gatewayError": {
+            "title": "{{ GATEWAY }} Error",
+            "error": {
+              "0": "Current invisigate is facing some issues",
+              "1": "Please change the invisigate"
+            }
+          }
+        }
+      },
+      "banner": {
+        "noneSelected": "NO {{ GATEWAY }} SELECTED",
+        "peak": {
+          "title": "Manage {{ GATEWAY }}/{{ TAC_SERVER }}",
+          "info": "Connected {{ GATEWAY }}s/{{ TAC_SERVER }}s {{ gatewayCount }}"
+        },
+        "prompt": {
+          "switch": "Switching to the active {{ GATEWAY }}"
+        }
+      },
+      "manage": {
+        "search": {
+          "text": "Search invisigates/controllers"
+        },
+        "add": {
+          "title": "Add Invisigate/Controller",
+          "info": {
+            "0": "What is the address of the {{ GATEWAY }}/{{ TAC_SERVER }} you would like to add?",
+            "1": "You may also enter an FQDN."
+          },
+          "inputLabel": "{{ GATEWAY }}/{{ TAC_SERVER }} Address",
+          "buttonName": "Add Invisigate/Controller",
+          "prompt": {
+            "mandatory": "Address is a mandatory field.",
+            "selectActive": "To switch {{ GATEWAY }}/{{ TAC_SERVER }}, please select an active {{ GATEWAY }}/{{ TAC_SERVER }} from the above list.",
+            "addSuccess": "{{ GATEWAY }}/{{SERVER}} added sucessfully.",
+            "error": {
+              "addError": {
+                "0": "Error adding Invisigate/Controller. Please try again.",
+                "1": "Details: "
+              }
+            },
+            "validation": {
+              "address": {
+                "0": "Address must be",
+                "1": "Either a valid <1>IP Address</1> like <3>14.234.212.23</3>",
+                "2": "OR a valid <1>FQDN (Fully Qualified Domain Name)</1> like"
+              },
+              "ipStandard": {
+                "message": "Provided address is not valid ",
+                "tooltip": {
+                  "0": "{{ Gateway }}/Controller address must be any one of the following",
+                  "1": "Valid <1>IPv4 Address</1> with octet sections like <3>1.2.3.4</3>",
+                  "2": "Valid <1>IPv6 Address</1> with hextet sections like <3>2001:db8:3333:4444:5555:6666:7777:8888</3>",
+                  "3": "Valid <1>FQDN (Fully Qualified Domain Name)</1> like"
+                }
+              }
+            }
+          }
+        },
+        "select": {
+          "title": "Select {{ GATEWAY}}/{{TAC_SERVER }}",
+          "buttonName": "Save & Continue",
+          "confirm": {
+            "0": "<4>Name: </4> {{ gatewayName }} | <4>Address: </4> {{ gatewayAddress }}",
+            "1": "Please click <0>\"Save and Continue\"</0> to switch to the above {{ GATEWAY}}/{{TAC_SERVER }}."
+          },
+          "warning": {
+            "noGatewaySelected": "No invisigates/controllers available for selection. Please add one to continue further in the app."
+          }
+        },
+        "table": {
+          "columns": {
+            "console": "{{ GATEWAY}}/{{TAC_SERVER }}",
+            "address": "IP Address",
+            "certExpireOn": "Cert.Expiry Change",
+            "offline": "Offline",
+            "type": "Type",
+            "UDP": "UDP",
+            "tokenDatagram": "Removing Token Datagram"
+          },
+          "action": {
+            "delete": {
+              "tooltip": "Remove"
+            }
+          },
+          "prompt": {
+            "loadingText": "Loading the latest list of invisigates",
+            "confirmDelete": {
+              "title": "Delete Confirmation",
+              "text": "Are you sure you want to remove the {{ GATEWAY}}/{{TAC_SERVER }}"
+            }
+          }
+        }
+      }
+    },
+    "errorPage": {
+      "404": {
+        "title": "404 NOT FOUND",
+        "message": "Sorry we couldn't find the page you requested",
+        "buttonName": "Get Support"
+      },
+      "title": "Whoops",
+      "error": {
+        "description": {
+          "0": "Looks like we hit a snag..! Our sincerest apologies for the inconvenience. Please try again by refreshing the page.",
+          "1": "Contact support if the problem persists."
+        }
+      }
+    },
+    "table": {
+      "addRecord": {
+        "name": "Add Record",
+        "tooltip": "Add Record"
+      },
+      "MoreActions": {
+        "bulkActions": {
+          "text": "Bulk Actions"
+        }
+      },
+      "header": {
+        "checkbox": {
+          "tooltip": "{{ isSelected }} all fetched rows to {{ isIncluded }} the bulk action"
+        },
+        "sort": {
+          "tooltip": {
+            "descendingText": "Descending",
+            "ascendingText": "Ascending"
+          }
+        },
+        "filter": {
+          "label": "Filter {{ labelName }}"
+        }
+      },
+      "content": {
+        "noContentMessage": "Please add a record to see table data here."
+      },
+      "footer": {
+        "pagination": {
+          "noPageToPaginate": "Pagination options will appear when there is at least one record to show.",
+          "paginationInfo": {
+            "0": "Showing",
+            "1": "records per page"
+          },
+          "pageDropDown": "List of Options for number of rows per page",
+          "actions": {
+            "goToFirstPageText": "First Page",
+            "goToPreviousPageText": "Previous Page",
+            "goToNextPageText": "Next Page",
+            "goToLastPageText": "Last Page"
+          },
+          "selectedRows": "rows selected"
+        }
+      },
+      "modal": {
+        "addRecord": "Add Record",
+        "editRecord": "Edit Record"
+      }
+    },
+    "Component": {
+      "Table Content": {
+        "Thead Text": {
+          "Trusted Text": "Trusted",
+          "Un-Trusted Text": "Untrusted"
+        },
+        "Action Option": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Delete Confirm Prompt": {
+              "Delete Confirm Title": "Delete Confirmation",
+              "Delete Confirm Content": "You have initiated the process of deleting this {{ actionComponent }} <0 /><0 />Click <1>Confirm</1> to delete, otherwise click <1>Cancel</1>.",
+              "Success": "{{ pageName }} with name `{{ rowName }}` Deleted successfully.",
+              "Error": " Error deleting {{ pageName }} with name `{{ rowName }}`. Please try again.<0 /><0 />Details:<0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "{{ pageName }} with name `{{ rowName }}` saved successfully.",
+              "Error": " Error saving {{ pageName }} with name `{{ rowName }}`. Please try again.<0 /><0 />Details:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Edit {{ pageName }}",
+            "Delete": "Delete {{ pageName }}",
+            "Save": "",
+            "Cancel": ""
+          }
+        },
+        "Name Field": {
+          "Header Name": "Name",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Name is a mandatory field.",
+              "Alpha-Numeric Only": "Only alpha-numeric characters are allowed.",
+              "Char Atleast Should Be": "Name field should be atleast 4 characters long",
+              "Charater Less Then Value": "Name field will allow 63 characters or less."
+            }
+          }
+        },
+        "Group Field": {
+          "Header Name": "Group",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Group is a mandatory field."
+            }
+          }
+        },
+        "Trust Level Field": {
+          "Header Name": "Trust Level",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Trust Level is a mandatory field.",
+              "Numbers Only": "Trust Level value can only be numbers.",
+              "Trust Level values range": "Trust Level values range from 0 to 7, where 0 is lowest level of security whereas 7 is highest level of security."
+            }
+          }
+        },
+        "Priority": {
+          "Header Name": "Priority",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Priority is a mandatory field."
+            }
+          }
+        },
+        "Ip Address Field": {
+          "Header Name": "IP Address",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "IP Address is a mandatory field.",
+              "Enter Ip or Mac Address": "Error: Must enter an IP address or MAC address.",
+              "Invalid Prefix 48 through 128": "Invalid IPv6 prefix value. Prefix should be an integer from 48 through 128.",
+              "Invalid Prefix 8 through 32": "Invalid IPv4 prefix value. Prefix should be an integer from 8 through 32.",
+              "Tooltip Prefix Text": "IP address is not valid"
+            },
+            "Tool Tip": {
+              "Message": {
+                "Ip Address Description": "IP address must be any one of the following:",
+                "List": {
+                  "Ipv4 Octet Section": "Valid <0>IPv4 Address</0> such as <1>1.2.3.4</1> with just octet sections.",
+                  "Ipv4 Prefix Range": "Valid <0>IPv4 Address</0> with Prefix range between 8-32 such as <1>1.2.3.4/24</1>",
+                  "Ipv6 Hextet Section": "Valid <0>IPv6 Address</0> such as <1>2001:db8:3333::0:00FF:08</1> with just hextet sections.",
+                  "Ipv6 Prefix Range": "Valid <0>IPv6 Address</0> with prefix range between 48-128 such as <1>ff00::12ee/56</1>"
+                }
+              }
+            }
+          }
+        },
+        "MAC Field": {
+          "Header Name": "MAC",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "MAC Address is a mandatory field.",
+              "Enter Ip or Mac Address": "Error: Must enter an IP address or MAC address.",
+              "Mac Incorrect": "MAC Address field is incorrect."
+            }
+          }
+        },
+        "Comment Field": {
+          "Header Name": "Comment",
+          "Validation": {
+            "Errors": {
+              "Comment allow 63 or less Char": "Comment field will allow 63 characters or less.",
+              "Comment allow 1024 or less Char": "Comment field will allow 1024 characters or less."
+            }
+          }
+        },
+        "TCP Tagging Field": {
+          "Header Name": "TCP Tagging",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "TCP Tagging is a mandatory field."
+            }
+          }
+        },
+        "Remote Key Field": {
+          "Header Name": "Remote Key",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Remote Key field is a mandatory field."
+            }
+          }
+        },
+        "Enabled Field": {
+          "Header Name": "Enabled",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Enabled field is a mandatory field."
+            }
+          }
+        },
+        "UDP Field": {
+          "Header Name": "UDP",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "UDP field is a mandatory field."
+            }
+          }
+        },
+        "IP Address/Prefix Field": {
+          "Header Name": "IP Address/Prefix",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "IP Address/Prefix is a mandatory field.",
+              "Incorrect": "Provided IP address is incorrect.",
+              "Invalid Prefix 48 and 128": "Invalid IPv6 prefix value. Prefix should be an integer between 48 and 128.",
+              "Invalid Prefix 8 through 32": "Invalid IPv4 prefix value. Prefix should be an integer from 8 through 32.",
+              "Ip Address Incorrect": "Provided IP address is incorrect."
+            }
+          }
+        },
+        "Members Field": {
+          "Header Name": "Members",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Atleast one protected resource need to be selected.",
+              "Resources Not Exceed": "Resources list can not exceed more than 8 protected resources"
+            }
+          }
+        },
+        "App Field": {
+          "Header Name": "App",
+          "Validation": {
+            "Errors": {}
+          }
+        },
+        "Action Field": {
+          "Header Name": "Action",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Action field is mandatory."
+            }
+          }
+        },
+        "Protected Resource(s) Field": {
+          "Header Name": "Protected Resource(s)",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Protected resource(s) is a mandatory field."
+            }
+          }
+        },
+        "Group(s) Field": {
+          "Header Name": "Group(s)",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Group(s) is a mandatory field.",
+              "Invalid": "Group(s) field can not contain any special characters."
+            }
+          }
+        },
+        "Protocol Field": {
+          "Header Name": "Protocol",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Protocol is a mandatory field.",
+              "Invalid": "Protocol is invalid."
+            }
+          }
+        },
+        "All Identity Groups Field": {
+          "Header Name": "All Identity Groups",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "All Identity Groups field is not selected."
+            }
+          }
+        },
+        "vLan ID Field": {
+          "Header Name": "vLan ID",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "vLAN ID must contain only digits. It may be left empty.",
+              "Vaild Number Between": "vLAN ID must be a valid number between 0 and 4095."
+            }
+          }
+        },
+        "Port Name Field": {
+          "Header Name": "Port Name",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Port Name is a mandatory field",
+              "Limit": "Cannot link more than 16 ports."
+            }
+          }
+        },
+        "File Name Field": {
+          "Header Name": "File Name"
+        },
+        "Date & Time Field": {
+          "Header Name": "Date & Time"
+        },
+        "Configuration Field": {
+          "Header Name": "Configuration"
+        },
+        "Software Version Field": {
+          "Header Name": "Software Version"
+        },
+        "Created Date Field": {
+          "Header Name": "Created Date"
+        },
+        "Number Field": {
+          "Header Name": "Number",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Number is a mandatory field.",
+              "Only Number": "Value in Number field is not correct.",
+              "Range": "Number field should be in the range 0-1020."
+            }
+          }
+        },
+        "Source IP Field": {
+          "Header Name": "Source IP",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Source IP is a mandatory field.",
+              "Invalid": "Source IP is invalid.",
+              "Invalid Prefix 48 and 128": "Invalid IPv6 prefix value. Prefix should be an integer between 48 and 128.",
+              "Invalid Prefix 8 through 32": "Invalid IPv4 prefix value. Prefix should be an integer from 8 through 32."
+            }
+          }
+        },
+        "Source Port Field": {
+          "Header Name": "Source Port",
+          "Validation": {
+            "Errors": {
+              "Invalid": "Source Port is invalid.",
+              "Range": "Source Port field should be in the range of 1-65535."
+            }
+          }
+        },
+        "Destination IP Field": {
+          "Header Name": "Destination IP",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Destination IP is a mandatory field.",
+              "Invalid": "Destination IP is invalid.",
+              "Valid Prefix 48 through 128": "Invalid IPv6 prefix value. Prefix should be an integer from 48 through 128.",
+              "Valid Prefix 8 through 32": "Invalid IPv4 prefix value. Prefix should be an integer from 8 through 32."
+            }
+          }
+        },
+        "Destination Port Field": {
+          "Header Name": "Destination Port",
+          "Validation": {
+            "Errors": {
+              "Invalid": "Destination Port is invalid.",
+              "Range": "Destination Port field should be in the range of 1-65535."
+            }
+          }
+        },
+        "Destination Field": {
+          "Header Name": "Destination",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Destination is a mandatory field.",
+              "Range": "The destination can contain only a maximum of 7 host addresses"
+            }
+          }
+        },
+        "Rule Action Field": {
+          "Header Name": "Rule Action",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Action is a mandatory field."
+            }
+          }
+        },
+        "Description Field": {
+          "Header Name": "Description"
+        },
+        "Serial Field": {
+          "Header Name": "Serial"
+        },
+        "Roles Field": {
+          "Header Name": "Roles",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Roles is a mandatory field."
+            }
+          }
+        },
+        "Location Field": {
+          "Header Name": "Location",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Location is a mandatory field."
+            }
+          }
+        },
+        "Certificate Field": {
+          "Header Name": "Certificate",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Certificate is a mandatory field."
+            }
+          }
+        },
+        "Algorithm Field": {
+          "Header Name": "Algorithm",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Algorithm is a mandatory field."
+            }
+          }
+        },
+        "Timeout Field": {
+          "Header Name": "Timeout",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Timeout is a mandatory field.",
+              "Invalid": "Timeout value must be a valid number.",
+              "Range": "Timeout value should range from 3600 to 65534 (seconds)."
+            }
+          }
+        },
+        "Heartbeat Interval Field": {
+          "Header Name": "Heartbeat Interval",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Heartbeat Interval is a mandatory field.",
+              "Invalid": "Heartbeat Interval must be a valid number.",
+              "Range": "Heartbeat Interval value should be less than half of Timeout value."
+            }
+          }
+        },
+        "DIR FQDN Field": {
+          "Header Name": "DIR FQDN",
+          "Validation": {
+            "Prompt": ""
+          }
+        },
+        "TAC Mutual Auth Field": {
+          "Header Name": "TAC Mutual Auth",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "TAC Mutual Auth field is a mandatory field."
+            }
+          }
+        },
+        "Firmware Version Field": {
+          "Header Name": "Firmware Version"
+        },
+        "SKU Field": {
+          "Header Name": "SKU"
+        },
+        "Certificate Expiry Field": {
+          "Header Name": "Certificate Expiry",
+          "Validation": {
+            "Errors": {
+              "Expired": "Invisipoint Certificate is expired.",
+              "Expired In Days": "Invisipoint Certificate expires in {{ days }} days."
+            }
+          }
+        },
+        "Release Version Field": {
+          "Header Name": "Release Version"
+        },
+        "Product Field": {
+          "Header Name": "Product"
+        },
+        "Task Type Field": {
+          "Header Name": "Task Type"
+        },
+        "Status Field": {
+          "Header Name": "Status"
+        },
+        "Status Notes Field": {
+          "Header Name": "Status Notes"
+        },
+        "Endpoint Name Field": {
+          "Header Name": "Invisipoint Name"
+        },
+        "Log File Name Field": {
+          "Header Name": "Log File Name"
+        },
+        "Log Start Date Field": {
+          "Header Name": "Log Start Date"
+        },
+        "Log End Date Field": {
+          "Header Name": "Log End Date"
+        },
+        "Log Delete Date Field": {
+          "Header Name": "Log Delete Date"
+        },
+        "ID Field": {
+          "Header Name": "ID"
+        },
+        "File ID Field": {
+          "Header Name": "File ID"
+        },
+        "Staged Date Field": {
+          "Header Name": "Staged Date"
+        },
+        "IPv4 Field": {
+          "Header Name": "IPv4"
+        },
+        "IPv6 Field": {
+          "Header Name": "IPv6"
+        },
+        "Trusted Flag Field": {
+          "Header Name": "Trusted Flag",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Trusted Flag is a mandatory field."
+            }
+          }
+        }
+      }
+    },
+    "successMessages": {
+      "configuration": "Configuration saved successfully."
+    },
+    "errorMessages": {
+      "errorDetails": "Error Details:",
+      "configuration": "Failed to save the configuration. Please try again.",
+      "appError": "Error saving application with name \"{{ rowName }}\". Please try again.",
+      "epcError": "Error adding invisipoint. Please try again.",
+      "errorSavingEpc": "Error saving invisipoint with name \"{{ name }}\" and serial \"{{ epcclient_ID }}\". Please try again.",
+      "errorDeletingEpc": "Error deleting invisipoint with name \"{name}\" and serial \"{epcclient_ID}\". Please try again.",
+      "errorDownloadLog": "Error downloading the logs. Please try again later.",
+      "invalidResponse": "Invalid response received.",
+      "errorFetching": "Error fetching filter rule templates. Please try again.",
+      "erroraddingFilterRule": "Error adding filter rule with number \"{{ ruleNum }}\". Please try again.",
+      "errorDeletingFilterRule": "Failed to delete the filter rule with number \"{{ ruleNum }}\". Can't save a filter rule without deleting it first. Please try again.",
+      "errorStatus": "Error {{ statusType }} filter rule with number \"{{ ruleNum }}\". Please try again.",
+      "errorTaskName": "Failed to {{ taskName }}. Please try again.",
+      "errorDeletingGateway": "Error deleting invisigate/controller with name ({{ name }}). Please try again.",
+      "errorLoadingGatewayList": "Error loading the invisigate/controller list. Please try again.",
+      "syslogSwitch": "Error the syslog Switch. Please try again.",
+      "errorInSyslog": "Error in Syslog. Please try again.",
+      "errorTextSyslog": "Error {{ text }} the Syslog. Please try again.",
+      "errorFetchingFile": "Error fetching file! Please try again",
+      "errorImportingFile": "Error importing file. Please try again",
+      "errorSwitchingGlobalTrust": "Error switching global trust level. Please try again.",
+      "removeGateway": "Failed to remove invisigate \"{{ name }}\". Please try again.",
+      "backupConfiguration": "Failed to backup configuration. Please try again.",
+      "restoreConfiguration": "Failed to restore from  {{ isRestoreFromRescue }}. Please try again.",
+      "rescue": "rescue configuration",
+      "saved": "last saved configuration",
+      "importingConfiguration": "Error importing configuration file. Please try again.",
+      "task": "Failed to {{ taskName }}. Please try again.",
+      "failedDelete": "Failed to Delete. Please try again.",
+      "failedExport": "Failed to Export. Please try again.",
+      "errorDeletingConfiguration": "Error deleting {{ GATEWAY }} configuration \"{{ fileName }}\". Please try again."
+    }
+  },
+  "header": {
+    "logout": {
+      "action": {
+        "error": {
+          "logoutFailed": "Failed to logout. Please try again."
+        }
+      },
+      "button": {
+        "tooltip": "Logout"
+      }
+    },
+    "Savebutton": {
+      "tooltip": "{{ console }}  configuration to be save"
+    },
+    "notification": {
+      "button": {
+        "tooltip": "Notifications"
+      },
+      "prompt": {
+        "noNotifications": "Currently there are no notifications",
+        "action": {
+          "delete": {
+            "error": {
+              "0": "Unable to delete notification. Please try again",
+              "1": "Error Details"
+            }
+          },
+          "fetch": {
+            "error": {
+              "0": "Error fetching notifications",
+              "1": "Error Details"
+            }
+          }
+        }
+      },
+      "portal": {
+        "title": "Notifications",
+        "button": {
+          "viewAll": {
+            "name": "View All"
+          }
+        }
+      }
+    }
+  },
+  "navigation": {
+    "home": {
+      "text": "Home",
+      "sub": {
+        "dashboard": {
+          "text": "Dashboard"
+        }
+      }
+    },
+    "dashboard": {
+      "text": "Dashboard",
+      "sub": {}
+    },
+    "manage": {
+      "text": "Manage",
+      "sub": {
+        "identities": {
+          "text": "Identities"
+        },
+        "protectedResources": {
+          "text": "Protected Resources"
+        },
+        "resourceLists": {
+          "text": "Resource Lists"
+        },
+        "unprotectedResources": {
+          "text": "Unprotected Resources"
+        },
+        "rules": {
+          "text": "Rules"
+        },
+        "trustLevel": {
+          "text": "Trust Level"
+        }
+      }
+    },
+    "configure": {
+      "text": "Configure",
+      "sub": {
+        "dnsTacMode": {
+          "text": "DNS & TAC Mode"
+        },
+        "layer3": {
+          "text": "Layer3"
+        },
+        "applications": {
+          "text": "Applications"
+        },
+        "settings": {
+          "text": "Configuration"
+        },
+        "configurationLogs": {
+          "text": "Configuration Logs"
+        }
+      }
+    },
+    "gatewayserver": {
+      "text": "Invisigate/Controller",
+      "sub": {
+        "services": {
+          "text": "Services"
+        },
+        "filterRules": {
+          "text": "Filter Rules"
+        }
+      }
+    },
+    "endpoint": {
+      "text": "Invisipoint",
+      "sub": {
+        "configure": {
+          "text": "Configure"
+        },
+        "firmware": {
+          "text": "Manage Firmware"
+        },
+        "taskStatus": {
+          "text": "Task Status"
+        },
+        "logFiles": {
+          "text": "Log Files"
+        }
+      }
+    },
+    "maintain": {
+      "text": "Maintainance",
+      "sub": {
+        "reboot": {
+          "text": "Reboot"
+        }
+      }
+    },
+    "ifvdgDevelopment": {
+      "text": "IFVDG Development",
+      "sub": {}
+    },
+    "dev": {
+      "text": "Development",
+      "sub": {}
+    }
+  },
+  "page": {
+    "signIn": {
+      "userName": "Username",
+      "userHelperText": "Username is required.",
+      "password": "Password",
+      "passwordHelperText": "Password can't be empty.",
+      "CapsLock": "Caps Lock is On!",
+      "greetMessage": {
+        "0": "Let’s work together",
+        "1": "Welcome Back"
+      }
+    },
+    "home": {
+      "dashboard": {
+        "widget": {
+          "error": {
+            "title": "Widget Error",
+            "message": "Error loading the widget data. Please try again or refresh the page."
+          },
+          "noContentText": "No stats available.",
+          "portal": {
+            "viewMoreText": "View More",
+            "title": {
+              "statistics": "Statistics",
+              "identities": "Identities",
+              "summary": "Summary",
+              "trustLevels": "Trust Levels",
+              "rules": "Rules",
+              "services": "Services"
+            },
+            "search": {
+              "placeholder": "Search {{ name }}..."
+            },
+            "table": {
+              "thead": {
+                "statistics": "Statistics",
+                "trusted": "Trusted",
+                "untrusted": "Untrusted",
+                "count": "Count"
+              }
+            }
+          }
+        },
+        "statistics": {
+          "title": "Statistics",
+          "tooltip": "Count of Application Traffic Logs",
+          "dropdown": {
+            "trusted": "Trusted",
+            "untrusted": "Untrusted"
+          },
+          "tokenInsert": {
+            "text": "Token Insert"
+          },
+          "tokenCollision": {
+            "text": "Token Collision"
+          },
+          "tokenNotFound": {
+            "text": "Token Not Found"
+          },
+          "tcpPktIn": {
+            "text": "TCP Packets In"
+          },
+          "default": {
+            "text": "Default"
+          }
+        },
+        "identities": {
+          "title": "Identities",
+          "tooltip": "Shows the number of identities in each group."
+        },
+        "summary": {
+          "title": "Summary",
+          "tooltip": "Currently selected {{ GATEWAY }} information.",
+          "certExpiryInfo": {
+            "0": "{{ GATEWAY }} Certificate is expired.",
+            "1": "{{ GATEWAY }} Certificate expires in {{ number }} days."
+          },
+          "hostname": {
+            "tooltip": "Hostname"
+          },
+          "version": {
+            "tooltip": "Version"
+          },
+          "firmwareVersion": {
+            "tooltip": "{{ GATEWAY }} Firmware Version"
+          },
+          "uptime": {
+            "tooltip": "Uptime"
+          },
+          "gwcertexpiryUTC": {
+            "tooltip": "{{ GATEWAY }} certificate expiry date"
+          },
+          "traffic_allowed": {
+            "tooltip": "Traffic allowed on this invisigate"
+          }
+        },
+        "trustLevels": {
+          "levelText": "Level",
+          "title": "Trust Levels",
+          "tooltip": "Trust Level vs Identities and Rules configured.",
+          "label0": "Sum of Identities",
+          "label1": "Sum of Rules"
+        },
+        "rules": {
+          "title": "Rules",
+          "tooltip": "Shows the number of rules categorized by action.",
+          "forward": "Forward",
+          "drop": "Drop",
+          "default": "Default"
+        },
+        "services": {
+          "title": "Services",
+          "tooltip": "Current status of the services <0 /> running in the selected {{ GATEWAY }}."
+        }
+      }
+    },
+    "manage": {
+      "identities": {
+        "bulkImport": {
+          "text": "Bulk Import"
+        },
+        "bulkImportStatus": {
+          "text": "Bulk Import Status"
+        },
+        "Error Message": {
+          "Mac Or IP Mandatory": "You must provide either an IP Address or a MAC."
+        },
+        "Action Options": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Delete Confirmation",
+              "Delete Confirm Content": "You have initiated the process of deleting this Identities <0 /><0 />Click <1>Confirm</1> to delete, otherwise click <1>Cancel</1>.",
+              "Success": "Identity with name `{{ rowName }}` Deleted successfully.",
+              "Error": " Error deleting Identity with name `{{ rowName }}`. Please try again.<0 /><0 />Details:<0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "Identity with name `{{ rowName }}` saved successfully.",
+              "Error": " Error saving Identity with name `{{ rowName }}`. Please try again.<0 /><0 />Details:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Edit Identities",
+            "Delete": "Delete Identities"
+          }
+        },
+        "Upload FileModal": {
+          "Title": "Upload File",
+          "Upload Progress": "Upload in progress ...",
+          "Loading Message": "Fetching file upload status...",
+          "Line1": "Select file to upload (.csv)",
+          "Line2": "Max size: 60MB",
+          "Line3": "Max No. of records: 1000",
+          "Select Button": "Select File",
+          "Select Error Button": "Select different file",
+          "Download Button": "Download Template CSV",
+          "importSupport": "File import support for CSV format only",
+          "sizeExceeds": "File size exceeds the Max size : 60MB",
+          "FileMore": "File more than 1000 rows are not allowed",
+          "validHeader": "File does not have valid header",
+          "missingHeader": "File has missing header",
+          "successResponse": "File imported successfully."
+        },
+        "File Upload Status Modal": {
+          "Title": "File Upload Status",
+          "File Name": "File Name",
+          "Uploaded On": "Uploaded On",
+          "Status": "Status",
+          "Records": "There are no records to display.",
+          "Action": "Action"
+        },
+        "Import In Progress Modal": {
+          "Title": "Bulk Import is already in progress",
+          "File Name": "File Name: {{ fileState }}",
+          "Uploaded On": "Uploaded On:"
+        },
+        "File Status Table": {
+          "File Id": "File ID",
+          "Name": "Name",
+          "Status": "Status",
+          "Status Notes": "Status Notes",
+          "Staged Date": "Staged Date",
+          "Group": "Group",
+          "Ipv4": "IPv4",
+          "Ipv6": "IPv6",
+          "Mac": "MAC",
+          "Trust Level": "Trust Level",
+          "Udp": "UDP",
+          "Tcp Tagging": "TCP Tagging",
+          "Remote Key": "Remote Key",
+          "Enabled": "Enabled",
+          "Comment": "Comment"
+        },
+        "Table Button": {
+          "Upload": "Upload",
+          "Cancel": "Cancel",
+          "Go Back": "Go Back"
+        }
+      },
+      "Protected Resourses": {
+        "Action Options": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Delete Confirmation",
+              "Delete Confirm Content": "You have initiated the process of deleting this resource <0 /><0 />Click <1>Confirm</1> to delete, otherwise click <1>Cancel</1>.",
+              "Success": "Resource with name `{{ rowName }}` Deleted successfully.",
+              "Error": " Error deleting Resource with name `{{ rowName }}`. Please try again.<0 /><0 />Details:<0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "Resource with name `{{ rowName }}` saved successfully.",
+              "Error": " Error saving Resource with name `{{ rowName }}`. Please try again.<0 /><0 />Details:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Edit Resource",
+            "Delete": "Delete Resource"
+          }
+        }
+      },
+      "Resource List": {
+        "Action Options": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Delete Confirmation",
+              "Delete Confirm Content": "You have initiated the process of deleting this resource list. <0 /><0 />Click <1>Confirm</1> to delete, otherwise click <1>Cancel</1>.",
+              "Success": "Resource List with name `{{ rowName }}` Deleted successfully.",
+              "Error": " Error deleting resource list with name `{{ rowName }}`. Please try again.<0 /><0 />Details:<0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "Resource List with name `{{ rowName }}` saved successfully.",
+              "Error": " Error saving resource list with name `{{ rowName }}`. Please try again.<0 /><0 />Details:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Edit Resource List",
+            "Delete": "Delete Resource List"
+          }
+        }
+      },
+      "Unprotected Resources": {
+        "Fetch Status": {
+          "Error": {
+            "Title": "Error Happened",
+            "Content": "<0> Unable to fetch or load more records from server  </0> <0> Error Info: </0>"
+          }
+        },
+        "Action Options": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Delete Confirmation",
+              "Delete Confirm Content": "You have initiated the process of deleting this unprotected resource. <0 /><0 />Click <1>Confirm</1> to delete, otherwise click <1>Cancel</1>.",
+              "Success": "Resource - name `{{ rowName }}` Deleted successfully.",
+              "Error": " Error deleting resource with name `{{ rowName }}`. Please try again.<0 /><0 />Details:<0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "Unprotected resource - Name `{{ rowName }}` saved successfully.",
+              "Error": " Error saving resource with name `{{ rowName }}`. Please try again.<0 /><0 />Details:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Edit Resource",
+            "Delete": "Delete Resource"
+          }
+        }
+      },
+      "Rules": {
+        "Fetch Status": {
+          "Error": {
+            "Title": "Error Happened",
+            "Content": "<0> Unable to fetch or load more records from server  </0> <0> Error Info: </0>",
+            "Please Update": "The save operation was canceled. Please update the inputs as needed and try again."
+          }
+        },
+        "Action Options": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Delete Confirmation",
+              "Delete Confirm Content": "You have initiated the process of deleting this rule <0 /><0 />Click <1>Confirm</1> to delete, otherwise click <1>Cancel</1>.",
+              "Success": "Rule with name `{{ rowName }}` and action `{{ rowAction }}` Deleted successfully.",
+              "Error": " Error deleting Rule with name `{{ rowName }}` and action `{{ rowAction }}`. Please try again.<0 /><0 />Details:<0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "Rule with name `{{ rowName }}` and action `{{ rowAction }}` saved successfully.",
+              "Error": " Error saving Rule with name `{{ rowName }}` and action `{{ rowAction }}`.. Please try again.<0 /><0 />Details:<0 />",
+              "Can't Save": "Can't save rule with name `{{ rowName }}` and action `{{ rowAction }}`.You MUST select at least 1 group when you have selected `No` for `All Identity Groups` field. <0 /> <0 /> Please select a group or set `All Identity Groups` field to `Yes` and try again."
+            },
+            "Edit Status Prompt": {
+              "To Continue": "Selected groups will be ignored as you have selected `Yes` for the `All Identity Groups` field.\n\nTo continue, choose OK in this modal or to create rule only for selected groups, choose to cancel and then select  `No` for the `All Identity Groups` field.",
+              "Save Option Cancel": "The save operation was canceled. Please update the inputs as needed and try again."
+            }
+          },
+          "Field Error": {
+            "At Least One": "At least one group needs to be selected as `All Identity Groups` field is set to `No`. <0 /> Please set it to `Yes` to apply rule to all selected groups or select at least one group.",
+            "Selected Groups": "Selected groups will be ignored as `All Identity Groups` field is set to `Yes`. <0 /> Please set it to `No` to apply rule only to selected groups."
+          },
+          "Tool Tip": {
+            "Edit": "Edit Rule",
+            "Delete": "Delete Rule"
+          }
+        }
+      },
+      "Trust Level": {
+        "Text Heading Icons": "Global Trust Level",
+        "EditButton": "Edit",
+        "CancelButton": "Cancel",
+        "ApplyButton": "Apply",
+        "Level0": "Level 0",
+        "Level1": "Level 1",
+        "Level2": "Level 2",
+        "Level3": "Level 3",
+        "Level4": "Level 4",
+        "Level5": "Level 5",
+        "Level6": "Level 6",
+        "Level7": "Level 7",
+        "ViewHelperText": "Global trust level of the invisigate is currently \"Level {{ selectedTrust }}\"",
+        "Disable": "Global trust level of the invisigate is already \"Level {{ selectedTrust }}\"",
+        "SaveEnable": "Global trust level of the invisigate will be changed to \"Level {{ newTrust }}\"",
+        "Saving": "Switching global trust level of the grateway from \"Level {{ selectedTrust }}\" to \"Level {{ newTrust }}...\"",
+        "Saved": "Global trust level of the invisigate switched to \"Level {{ newTrust }}\" successfully.",
+        "Error": "Error switching global trust level of the grateway from \"Level {{ selectedTrust }}\" to \"Level {{ newTrust }}\". Please try again.",
+        "Text Heading": "Trust Level Groups",
+        "Table": {
+          "EditTooltip": "Edit Trust Group"
+        },
+        "Fetch Status": {
+          "Error": {
+            "Title": "Error Happened",
+            "Content": "<0> Unable to fetch or load more records from server  </0> <0> Error Info: </0>"
+          }
+        },
+        "Action Options": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Saved Status Prompt": {
+              "Success": "Trust Level for group `{{ rowName }}` saved successfully.",
+              "Error": " Error saving trust level for group `{{ rowName }}`.. Please try again.<0 /><0 />Details:<0 />"
+            }
+          }
+        }
+      }
+    },
+    "configure": {
+      "dnsTacMode": {
+        "ipSummaryWidget": {
+          "title": "IPv{{ version }} Summary",
+          "tooltips": {
+            "hostname": "Hostname",
+            "fqdn": "FQDN",
+            "ipAddress": "IPv{{ version }} Address",
+            "ipPrefix": "IPv{{ version }} Prefix",
+            "defaultGateway": "Default Gateway"
+          },
+          "fallback": {
+            "notConfiguredText": "Not Configured"
+          }
+        },
+        "tacModeWidget": {
+          "title": "TAC Mode",
+          "currentModeInfo": {
+            "0": "{{ GATEWAY }} is a Controller and cannot be configured.",
+            "1": "{{ GATEWAY }} is currently in \"{{ mode }}\" mode.",
+            "2": "{{ GATEWAY }} will be changed to \"{{ mode }}\" mode.",
+            "3": "Switching invisigate mode from \"{{ oldMode }}\" to \"{{ newMode }}\"...",
+            "4": "{{ GATEWAY }} mode switched to \"{{ mode }}\" successfully."
+          },
+          "TacMode": {
+            "Bridge": "Bridge",
+            "Monitor": "Monitor",
+            "Enforce": "Enforce"
+          },
+          "prompt": {
+            "success": {},
+            "error": {
+              "switchError": {
+                "0": "Error switching the TAC mode. Please try again.",
+                "1": "Details:"
+              }
+            }
+          }
+        },
+        "dnsTable": {
+          "title": "DNS Management",
+          "addButton": "Add",
+          "table": {
+            "address": {
+              "columnName": "Address",
+              "inputPlaceholder": "Address",
+              "validation": {
+                "duplicate": "Provided address already exists in the list. Please input a different one.",
+                "mandatory": "Address can't be blank.",
+                "sameValue": "Provided address is same as the current value of the address.",
+                "wrongIPv4": "Please input a valid IPv4 address. E.g., \"10.0.0.10\"",
+                "wrongIpv6": "Please input a valid IPv6 address. E.g.2001:db8:3333:4444:5555:6666:7777:8888"
+              }
+            },
+            "action": {
+              "columnName": "Action",
+              "edit": "Edit",
+              "delete": "Delete",
+              "prompt": {
+                "confirmDelete": {
+                  "title": {
+                    "0": "Delete Confirmation",
+                    "1": "Are you sure you would like to change DNS?"
+                  },
+                  "description": {
+                    "0": "You have initiated the process of {{ text }} this DNS.",
+                    "1": "You will be logged out and redirected to Login screen and the Invisigate/Controller will be unreachable for for a moment until the services are fully restarted.",
+                    "2": "Click <1>{{ text }}</1> to delete, otherwise click <1>Cancel</1>.",
+                    "deletingText": "Deleting",
+                    "savingText": "Saving"
+                  }
+                },
+                "success": {},
+                "error": {
+                  "fetchError": {
+                    "0": "Error fetching the DNS list. Please try again.",
+                    "1": "Details:",
+                    "2": "Error fetching the DNS list. Please try again."
+                  }
+                },
+                "outageWarn": {
+                  "0": "The invisigate will be unreachable for a while the services are fully restarted.",
+                  "1": "Click \"Save\" to change, otherwise click \"Cancel\"."
+                }
+              }
+            }
+          }
+        },
+        "error": {
+          "fetchError": {
+            "0": "Error fetching the network information. Please try again.\n\nError Details:"
+          }
+        }
+      },
+      "Layer3": {
+        "LabelText": "Layer3",
+        "SUCCESS": "SUCCESS",
+        "ERROR": "ERROR !!",
+        "Enabled Text": "Enabled",
+        "Disabled Text": "Disabled",
+        "Routes Text": "ROUTES",
+        "Nats Text": "NATS",
+        "Nats Management Text": "NATs Management",
+        "Routes Management Text": "ROUTEs Management",
+        "Fetch Status": {
+          "Error": {
+            "Title": "Error Happened",
+            "Content": "<0> Unable to fetch or load more records from server  </0> <0> Error Info: </0>",
+            "Fetch Error Layer3": "Error fetching information about the Layer3 service. Please try again. <0 /><0 /> Error Details:",
+            "Fetch Error Gateway": "Error fetching information about the invisigate mode. please try again.<0 /><0 />Error Details:",
+            "Error Layer3 Service": "Error {{ layer }} the Layer3 service. Please try again. <0 /> <0 />Error Details:<0 />"
+          },
+          "Success": {
+            "Layer3 Service Successfully": "Successfully {{ toggleState }} the Layer3 service"
+          }
+        },
+        "Action Options": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Saved Status Prompt": {
+              "Success": "",
+              "Error": " Error saving NAT with trustedIP `{{ rowTrIp }}` and untrusted IP `{{ rowUtIp }}`. Please try again. <0 /><0 /> Details:<0 />",
+              "Route Success": "Route with IP `{{ rowIp }}` added successfully.",
+              "Route Error": " Error saving route with IP `{{ rowIp }}`. Please try again.<0 /><0 />Details:<0 />"
+            },
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Delete Confirmation",
+              "Delete Confirm Content": "You have initiated the process of deleting this NAT <0 /><0 />Click <1>Confirm</1> to delete, otherwise click <1>Cancel</1>.",
+              "Delete Route Confirm": "You have initiated the process of deleting this Route.<0 /><0 />Click <1>Confirm</1> to delete, otherwise click <1>Cancel</1>.",
+              "Success": "",
+              "Error": " Error deleting NAT with trusted IP `{{ rowName }}` and untrusted IP `{{ rowAction }}`. Please try again.<0 /><0 /> Details:<0 />",
+              "Success Route": "Route with IP `{{ rowIp }}` deleted successfully.",
+              "Error Route": "Error deleting route with IP `{{ rowIp }}`. Please try again.<0 /><0 />Details:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit Nat": "Edit Nat",
+            "Delete Nat": "Delete Nat",
+            "Delete Route": "Delete Route"
+          }
+        }
+      },
+      "Applications": {
+        "Action Options": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Edit Prompt": {
+              "Success": "`{{ rowName }}` Los puertos se actualizaron correctamente.",
+              "Error": "Error al actualizar los puertos `{{rowName }}`. Inténtalo de nuevo.. <0 /><0 />Detalles: <0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "Application with name `{{ rowName }}` saved successfully.",
+              "Error": " Error saving application with name `{{ rowName }}`. Please try again. <0 /><0 />Details: <0 />"
+            },
+            "Delete Status Prompt": {
+              "Success": "Application with name `{{ rowName }}` deleted successfully.",
+              "Error": "Error deleting application with name `{{ rowName }}`. Please try again.<0 /><0 />Details:<0 />",
+              "Delete Confirm Title": "Delete Confirmation",
+              "Delete Confirm Content": "You have initiated the process of deleting this application <0 /><0 />Click <1>Confirm</1> to delete, otherwise click <1>Cancel</1>."
+            }
+          },
+          "Tool Tip": {
+            "Edit": "",
+            "Delete": "Delete Application"
+          }
+        },
+        "Fetch Status": {
+          "Error": {
+            "Title": "Error Happened",
+            "Content": "<0> Unable to fetch or load more records from server  </0> <0> Error Info: </0>"
+          }
+        }
+      },
+      "Configuration": {
+        "Banner": {
+          "Invisigate Name": "Invisigate Name",
+          "Controller Name": "Controller Name",
+          "Current Firmware Version": "Current Firmware Version",
+          "fqdn": "FQDN",
+          "More Button": "More",
+          "Menu Buttons": {
+            "Backup": "Back Up",
+            "Restore": "Restore"
+          }
+        },
+        "BackUp Configuration Modal": {
+          "Title": "Back up Configuration",
+          "FileName": "Filename",
+          "File Name Helper Text1": "Filename is a mandatory field",
+          "File Name Helper Text2": "Filename accepts '-', '_', 'Alphanumeric' characters only",
+          "PassPhrase": "Passphrase",
+          "PassPhrase Helper Text1": "Passphrase is a mandatory field",
+          "PassPhrase Helper Text2": "Passphrase should be atleast 4 characters in length",
+          "Confirm PassPhrase": "Confirm Passphrase",
+          "Confirm Phrase Helper Text": "Confirm Passphrase is a mandatory field",
+          "Confirm Phrase Not Same": "Confirm Passphrase not same as the Passphrase",
+          "Check Box Label": "Backup as Rescue Configuration",
+          "Tooltip": "Set Configuration as Backup Configuration",
+          "Comment": "Comment",
+          "Comment Helper Text": "Comment field will allow 63 characters or less.",
+          "Cancel Button": "Cancel",
+          "Backup Button": "Backup",
+          "Confirmation Modal": {
+            "Title": "Backup Configuration",
+            "Content": "Are you sure you want to Backup this configuration?",
+            "cancel": "Cancel",
+            "Confrim": "Confirm"
+          },
+          "successAlert": {
+            "Content": "{{ type }} configuration \"{{ fileName }}\" backed up successfully."
+          }
+        },
+        "Restore Configuration Moal": {
+          "Title": "Restore Configuration",
+          "Saved Checkbox": "From last saved configurations",
+          "Last Saved Configurations": {
+            "Title": "Last Saved Configurations",
+            "PassPhrase": "Passphrase",
+            "PassPhrase Helper Text1": "Passphrase is a mandatory field",
+            "PassPhrase Helper Text2": "Passphrase should be atleast 4 characters in length",
+            "Comment": "Comment",
+            "Comment Placeholder": "Enter comments for future reference",
+            "Comment Helper Text": "Comment field will allow 63 characters or less.",
+            "Cancel Button": "Cancel",
+            "Apply Button": "Apply"
+          },
+          "Configuration Name": "Configuration Name:",
+          "Configuration Imported": "Configuration imported successfully",
+          "Tar": "Selected file has a wrong extension. Please select a valid tar ball.",
+          "Size": "Selected file is too large. Maximum allowed file size: 60 MB",
+          "Type": "Selected file has a wrong mime-type. Please select a valid tar ball.",
+          "Close": "Close",
+          "Rescue Checkbox": "From Rescue Configuration",
+          "Rescue Configuration": {
+            "Title": "Restoring the Rescue Configuration",
+            "Comment": "Comment",
+            "Comment Placeholder": "Enter comments for future reference",
+            "Comment Helper Text": "Comment field will allow 63 characters or less.",
+            "Cancel Button": "Cancel",
+            "Apply Button": "Apply"
+          },
+          "Import Checkbox": "Import a configuration and restore",
+          "Import Configuration": {
+            "Line1": "Select configuration to upload",
+            "Line2": "(.tgz or tar bal)",
+            "Line3": "Max size:60 MB",
+            "Line4": "Or",
+            "Select Button": "Select File",
+            "File Name": "Filename",
+            "File Name Helper Text1": "Filename is a mandatory field",
+            "File Name Helper Text2": "Filename accepts '-', '_', 'Alphanumeric' characters only",
+            "PassPhrase": "Passphrase",
+            "PassPhrase Helper Text1": "Passphrase is a mandatory field",
+            "PassPhrase Helper Text2": "Passphrase should be atleast 4 characters in length",
+            "Comment": "Comment",
+            "Comment Helper Text": "Comment field will allow 63 characters or less.",
+            "Cancel Button": "Cancel",
+            "Apply Button": "Import & Restore"
+          },
+          "Action Options": {
+            "Header Name": "Action",
+            "Prompt": {
+              "Restore Configure Prompt": {
+                "Restore Configure Title": "Restore Configuration From Last Saved Files",
+                "Restore Rescue Title": "Restore From Rescue Configuration",
+                "Import Configure Title": "Import Configuration and Restore",
+                "List": {
+                  "0": "Restoring this configuration will cause the {{ modal }} to restart. <0 /><0 /> Are you sure you want to restore to this configuration?<0 />",
+                  "1": "NOTE: <0><1 /></0>User will be logged out and {{ gateWay }} will be restarted."
+                }
+              }
+            }
+          }
+        },
+        "Table Title": "View Configuration",
+        "BulkAction": {
+          "Delete": "Delete Configurations",
+          "Export": "Export Configurations"
+        },
+        "TableActionTooltip": {
+          "Export": "Export Configuration",
+          "Restore": "Restore Configuration",
+          "Delete": "Delete Configuration"
+        },
+        "TableActionAlert": {
+          "Export": {
+            "Content": "You have initiated the process of restoring this configuration.<0 /><0 />Click <1>Confirm</1> to restore, otherwise click <1>Cancel</1> action.",
+            "Content2": "NOTE:",
+            "Content3": "User will be logged out and {{ Invisigate }} will be restarted."
+          }
+        },
+        "Action Options": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Success": "Gateway configuration `{{ fileName }}` deleted successfully.",
+              "Error": "Error deleting invisigate configuration `{{ fileName }}`. Please try again. <0 /> <0 /> Details:<0 />",
+              "Delete Confirm Title": "Delete Confirmation",
+              "Delete Confirm Content": "You have initiated the process of deleting this configuration<0 /><0 />Click <1>Confirm</1> to delete, otherwise click<1>Cancel</1>.",
+              "Deleted Gatway": "Deleting gatway configuration..."
+            },
+            "Export Status Prompt": {
+              "Success": "{{ gateWay }} configuration <0>`{{ fileName }}`</0> exported successfully. Download will be completed shortly.",
+              "Error": "Error while exporting {{ gateWay }} configuration `{{ fileName }}`. Please try again.<0/><0/>Details:<0/> "
+            },
+            "Restored Status Prompt": {
+              "Success": {
+                "0": "{{ gateWay }} configuration `{{ fileName }}` restored successfully.",
+                "1": "User will be logged out and {{ gateWay }} will be restarted."
+              },
+              "Error": "Error restoring {{ gateWay }} configuration {{ fileName }}. Please try again.<0 /><0 />Details:<0 />"
+            },
+            "Restoring Status Prompt": {
+              "Error": "Error restoring {{ gateWay }} configuration `{{ fileName }}`. Please try again.<0/><0/>Details:<0/> "
+            }
+          }
+        },
+        "Fetch Status": {
+          "Error": {
+            "Title": "Error Happened",
+            "Content": "<0> Unable to fetch or load more records from server  </0> <0> Error Info: </0>"
+          }
+        }
+      },
+      "ConfiguratioLogs": {
+        "TableTitle": "Configuration Logs"
+      }
+    },
+    "gatewayServer": {
+      "services": {
+        "context": {
+          "text": "Context",
+          "toggle": {
+            "prompt": {
+              "success": {
+                "title": "Success",
+                "message": ""
+              },
+              "error": {
+                "title": "Error",
+                "message": "Error when switching context"
+              }
+            }
+          },
+          "distributedIdentities": {
+            "text": "Distributed Identities",
+            "tooltip": "Configure Distributed Identities to toggle",
+            "fields": {
+              "timeout": {
+                "label": "Timeout (Seconds)"
+              },
+              "algorithm": {
+                "label": "Algorithm"
+              },
+              "tcpTagging": {
+                "label": "TCP Tagging"
+              },
+              "groups": {
+                "label": "Groups (Comma Separated)"
+              }
+            },
+            "validation": {
+              "algorithm": "Please select the value for Algorithm",
+              "tcp": "Please select the value for TCP Tagging",
+              "timeout": {
+                "0": "Please populate the field for Timeout (Seconds)",
+                "1": "Timeout field accepts only <1>numeric</1> not <1>{{ value }}</1>",
+                "2": "Timeout should range from <1>3600</1> to <1>65534</1> (seconds)."
+              },
+              "groups": {
+                "0": "Please populate the field for Groups (Comma separated)",
+                "1": "Groups field (Comma separated) will take in numbers or alphabets only",
+                "2": "Maximum of 40 groups are allowed"
+              }
+            },
+            "prompt": {
+              "alert": {
+                "title": "Alert",
+                "info": "Please make some changes to the preferences to update."
+              },
+              "success": {
+                "title": "Success",
+                "info": "Successfully configured Distributed Identities service.",
+                "info1": "Distributed Identities Configured sucessfully."
+              },
+              "error": {
+                "save": {
+                  "0": "Error in saving Distributed Identities . Please try again.",
+                  "1": "Error Details: ",
+                  "info": "Error in Update of Distributed Identities. Please try again."
+                }
+              }
+            },
+            "toggle": {
+              "success": {
+                "title": "Success",
+                "message": "Successfully toggled the distributed identities."
+              },
+              "error": {
+                "title": "Error",
+                "message": {
+                  "0": "Error {{ text }} the distributed identities. Please try again.",
+                  "1": "Error Details: "
+                }
+              }
+            }
+          },
+          "remoteSysLog": {
+            "text": "Remote SysLog",
+            "table": {
+              "columns": {
+                "name": {
+                  "text": "Name",
+                  "validation": {
+                    "0": "Name is a mandatory field.",
+                    "1": "Only alpha-numeric characters and underscore are allowed."
+                  }
+                },
+                "facility": {
+                  "text": "Facility",
+                  "validation": {
+                    "0": ""
+                  }
+                },
+                "priority": {
+                  "text": "Priority",
+                  "validation": {
+                    "0": "Priority is a mandatory field."
+                  }
+                },
+                "server": {
+                  "text": "Server IP",
+                  "validation": {
+                    "0": "Server IP Address is a mandatory field.",
+                    "1": "Provided IP address is incorrect."
+                  }
+                },
+                "port": {
+                  "text": "Port",
+                  "validation": {
+                    "0": "Port is a mandatory field.",
+                    "1": "Port value must be a valid number.",
+                    "2": "Port field should be in the range of 1 - 65535."
+                  }
+                },
+                "action": {
+                  "text": "Action",
+                  "actions": {
+                    "delete": {
+                      "name": "Delete Remote Syslog",
+                      "confirmationText": {
+                        "0": "Delete Confirmation",
+                        "1": "You have initiated the process of deleting this record.",
+                        "2": "Click <1>Confirm</1> to delete, otherwise click <1>Cancel</1>."
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "action": {
+              "success": {
+                "0": "Remote Syslog server with name \"{{ name }}\" saved successfully.",
+                "1": "Remote Syslog server with name \"{{ name }}\" deleted successfully."
+              },
+              "error": {
+                "fetch": {
+                  "0": "Error in the Syslog Configure. Please try again.",
+                  "1": "Error Details: "
+                },
+                "save": {
+                  "0": "Error saving Remote Syslog server with name \"{{ name }}\". Please try again.",
+                  "1": "Details: "
+                },
+                "delete": {
+                  "0": "Error deleting Remote Syslog server with name \"{{ name }}\". Please try again.",
+                  "1": "Details: "
+                }
+              }
+            },
+            "dropdown": {
+              "enabledText": "Enabled",
+              "disabledText": "Disabled",
+              "syslogFormat": {
+                "text": "Syslog Format"
+              },
+              "syslogDebugMode": {
+                "text": "Syslog Debug Mode"
+              },
+              "save": {
+                "warn": {
+                  "title": "Alert",
+                  "info": "Please make some changes to the record to update."
+                },
+                "success": {
+                  "title": "Success",
+                  "info": "Syslog configuration updated successfully."
+                },
+                "error": {
+                  "title": "Error",
+                  "info": {
+                    "0": "Error in Syslog Config. Please try again.",
+                    "1": "Error Details: "
+                  }
+                }
+              }
+            }
+          },
+          "pubSub": {
+            "text": "Pub/Sub",
+            "tooltip": "Configure PubSub to toggle the service",
+            "label": "Publisher IP",
+            "stoppedText": "Stopped",
+            "runningText": "Running",
+            "radio": {
+              "label1": "Publisher: ",
+              "label2": "Subscriber: "
+            },
+            "validation": {
+              "0": "Please populate the field for Publisher IP in order to use Subscriber.",
+              "1": "Provided IP address is incorrect."
+            },
+            "prompt": {
+              "alert": {
+                "title": "Alert",
+                "info": "Please make some changes to the record to update"
+              },
+              "error": {
+                "title": "Error",
+                "save": {
+                  "0": "Error the pub/sub save. Please try again.",
+                  "1": "Error Details: "
+                }
+              },
+              "success": {
+                "title": "Success",
+                "text": "Successfully Completed."
+              }
+            },
+            "toggle": {
+              "prompt": {
+                "success": "Successfully toggled the pub/sub Switch.",
+                "error": {
+                  "0": "Error {state} the pub/sub Switch. Please try again.",
+                  "1": "Error Details: "
+                },
+                "error1": {
+                  "0": "Error in Pub/Sub. Please try again.",
+                  "1": "Error Details: "
+                }
+              }
+            }
+          },
+          "remoteKeyAgent": {
+            "text": "Remote Key Agent",
+            "tooltip": "Configure Remote Key Agent to toggle",
+            "popup": {
+              "title": "Configure Remote Key Agent"
+            },
+            "field": {
+              "label": "Address",
+              "description": "What is the IP address for the remote keying service..?",
+              "validation": {
+                "0": "Remote Key field is mandatory",
+                "1": "Provided IP address is incorrect",
+                "2": "Provided domain is incorrect",
+                "3": "Prefix is not allowed"
+              }
+            },
+            "prompt": {
+              "alert": {
+                "title": "Alert",
+                "message": "Please make some changes to the record to update."
+              },
+              "success": {
+                "title": "Success",
+                "message": "Remote Key serivce configured successfully."
+              },
+              "error": {
+                "title": "Error",
+                "message": {
+                  "0": "Error in Remote Key. Please try again.",
+                  "1": "Error Details: ",
+                  "2": "Error in Update of remote key service. Please try again."
+                }
+              }
+            },
+            "toggle": {
+              "prompt": {
+                "success": {
+                  "title": "Success",
+                  "message": "Successfully toggled the remote key."
+                },
+                "error": {
+                  "title": "Error",
+                  "message": {
+                    "0": "Error {{ text }} the remote key. Please try again.",
+                    "1": "Error Details: "
+                  }
+                }
+              }
+            }
+          },
+          "networkTimeProtocol": {
+            "text": "Network Time Protocol",
+            "tooltip": "",
+            "table": {
+              "title": "NTP Servers",
+              "columns": {
+                "serverHostnameOrIP": {
+                  "text": "Server Hostname/IP"
+                },
+                "status": {
+                  "text": "Status"
+                }
+              }
+            },
+            "toggle": {
+              "prompt": {
+                "success": {
+                  "title": "Success",
+                  "message": "Successfully toggled the NTP Switch."
+                },
+                "error": {
+                  "title": "Error",
+                  "message": {
+                    "0": "Error {{ text }} the NTP Switch. Please try again.",
+                    "1": "Error Details: "
+                  }
+                }
+              }
+            }
+          },
+          "secureShellDaemon": {
+            "text": "Secure Shell Daemon",
+            "tooltip": "",
+            "prompt": {
+              "success": {
+                "title": "Success",
+                "message": "Successfully toggled the secure shell daemon switch."
+              },
+              "error": {
+                "title": "Error",
+                "message": {
+                  "0": "Error {{ state }} the secure shell daemon switch. Please try again.",
+                  "1": "Error Details: "
+                }
+              }
+            }
+          },
+          "restApi": {
+            "text": "RestAPI",
+            "tooltip": "",
+            "toggle": {
+              "prompt": {
+                "success": {
+                  "title": "Success",
+                  "message": "Successfully toggled the Rest-Api Switch."
+                },
+                "error": {
+                  "title": "Error",
+                  "message": {
+                    "0": "Error {{ text }} the Rest-Api Switch. Please try again.",
+                    "1": "Error Details: "
+                  }
+                }
+              }
+            }
+          }
+        },
+        "trustedInterface": {
+          "title": "Trusted Management",
+          "text": "Trusted Interface",
+          "tooltip": "Please disable the interface to be able to configure it.",
+          "configureTooltip": "Configure Trusted Interface to toggle",
+          "prompt": {
+            "success": {
+              "title": "Success",
+              "message": ""
+            },
+            "error": {
+              "title": "Error",
+              "message": {
+                "0": "Error {{ text }} the trusted interface. Please try again.",
+                "1": "Error Details: "
+              }
+            }
+          },
+          "form": {
+            "ipv4p": {
+              "label": "IP Address/Prefix (IPv4)"
+            },
+            "ipv4": {
+              "label": "Gateway (IPv4)"
+            },
+            "ipv6p": {
+              "label": "IP Address/Prefix (IPv6)"
+            },
+            "ipv6": {
+              "label": "Gateway (IPv6)"
+            },
+            "vLanId": {
+              "label": "vLan ID"
+            },
+            "validation": {
+              "eitherOrMandatory": "Either IPv4/prefix or IPv6/prefix is a mandatory field",
+              "invalid": "Provided IP address is incorrect.",
+              "invalidV4": "Gateway (IPv4) field must be a valid IPv4 address.",
+              "invalidV6": "Gateway (IPv6) field must be a valid IPv6 address.",
+              "invalidWithHelpers": {
+                "0": "Invalid IPv4 prefix value.",
+                "1": "Prefix should be an integer from 8 through 31."
+              },
+              "invalidWithHelpers6": {
+                "0": "Invalid IPv6 prefix value.",
+                "1": "Prefix should be an integer from 48 through 127."
+              }
+            },
+            "prompt": {
+              "alert": {
+                "title": "Alert",
+                "message": "Please make some changes to the record to update"
+              },
+              "success": {
+                "title": "Success",
+                "message": "Trusted Interface configured successfully."
+              },
+              "error": {
+                "title": "Error",
+                "message": {
+                  "0": "Error in saving Trusted Management. Please try again.",
+                  "1": "Error Details: "
+                }
+              }
+            }
+          }
+        },
+        "untrustedInterface": {
+          "title": "Untrusted Management",
+          "text": "Untrusted Interface",
+          "tooltip": "Please disable the untrusted interface to be able to configure it.",
+          "configureTooltip": "Configure Untrusted Interface to toggle",
+          "prompt": {
+            "success": {
+              "title": "Success",
+              "message": ""
+            },
+            "error": {
+              "title": "Error",
+              "message": {
+                "0": "Error {{ text }} the untrusted interface. Please try again.",
+                "1": "Error Details: "
+              }
+            }
+          },
+          "form": {
+            "ipv4p": {
+              "label": "IP Address/Prefix (IPv4)"
+            },
+            "ipv4": {
+              "label": "Gateway (IPv4)"
+            },
+            "ipv6p": {
+              "label": "IP Address/Prefix (IPv6)"
+            },
+            "ipv6": {
+              "label": "Gateway (IPv6)"
+            },
+            "vLanId": {
+              "label": "vLan ID"
+            },
+            "validation": {
+              "eitherOrMandatory": "Either IPv4/prefix or IPv6/prefix is a mandatory field",
+              "invalid": "Provided IP address is incorrect.",
+              "invalidV4": "Gateway (IPv4) field must be a valid IPv4 address.",
+              "invalidV6": "Gateway (IPv6) field must be a valid IPv6 address.",
+              "invalidWithHelpers": {
+                "0": "Invalid IPv4 prefix value.",
+                "1": "Prefix should be an integer from 8 through 31."
+              },
+              "invalidWithHelpers6": {
+                "0": "Invalid IPv6 prefix value.",
+                "1": "Prefix should be an integer from 48 through 127."
+              }
+            },
+            "prompt": {
+              "alert": {
+                "title": "Alert",
+                "message": "Please make some changes to the record to update"
+              },
+              "success": {
+                "title": "Success",
+                "message": "Untrusted Interface configured successfully."
+              },
+              "error": {
+                "title": "Error",
+                "message": {
+                  "0": "Error in saving Untrusted Management. Please try again.",
+                  "1": "Error Details: "
+                }
+              }
+            }
+          }
+        },
+        "prompt": {
+          "title": "Are you sure..?",
+          "message": "You will be logged out and redirected to Login screen and the Invisigate/Controller will be unreachable for for a moment until the services are fully restarted."
+        }
+      },
+      "Filter Rules": {
+        "BulkAction": {
+          "Enable": "Enable Selected Rules",
+          "Disable": "Disable Selected Rules"
+        },
+        "TableActionTooltip": {
+          "Edit": "Edit Rule",
+          "Delete": "Delete Rule"
+        },
+        "Modal": {
+          "Modal Title": "MODAL TITLE",
+          "Modal Message": "MODAL MESSAGE",
+          "Okay Text": "Okay",
+          "Nope Text": "Nope",
+          "Close Text": "Close",
+          "Task Results Text": "Task Results",
+          "Follow Perform Task": "Following are the processed items while performing the task."
+        },
+        "Select Option": {
+          "Choose a Context Field": {
+            "Title": "Choose a Context"
+          },
+          "From/To Trusted Field": {
+            "Title": "From/To Trusted"
+          },
+          "Fetch Status": {
+            "Error": {
+              "Title": "Error Happened",
+              "Content": "<0>Unable to fetch or load more records from server</0><0>Error Info:</0>"
+            }
+          },
+          "Action Options": {
+            "Header Name": "Action",
+            "Prompt": {
+              "Saved Status Prompt": {
+                "Success": "Filter rule with number `{{ ruleNum }}` added successfully.",
+                "Error": "Error adding filter rule with number `{{ ruleNum }}`. Please try again. <br /><br />Details:<br />"
+              },
+              "Delete Status Prompt": {
+                "Success": "Filter rules with name `{{ ruleNum }}` deleted successfully.",
+                "Error": "Error deleting filter with name `{{ ruleNum }}`.<br /> <br />Details:<br />",
+                "Failed To Delete": "Failed to delete the filter rule with number `{row.ruleNum}`. Can't save a filter rule without deleting it first. Please try again.<br /><br />Error Details:<br />"
+              },
+              "Edit Status Prompt": {
+                "Ip Not Same": "<p>Source IP and Destination IP can not be the same.<br />Please, enter a different IP address!</p>"
+              },
+              "Disable & Enable Rule": {
+                "Success": "Filter rule with number `{{ ruleNum }}` {{ type }} successfully.",
+                "Error": "Error {{ statusType }} filter rule with number `{{ ruleNum }}`. Please try again.<br /><br />Details:<br />"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Endpoint": {
+      "Configure": {
+        "TableActionTooltip": {
+          "Edit": "Edit EndPoint",
+          "Delete": "Delete EndPoint"
+        },
+        "ellipsisMenu": {
+          "requestLogFile": "Request Log File",
+          "tooltipLogFile": "Submit a request to generate log file for this invisipoint",
+          "downloadLogs": "Download Logs",
+          "tooltipDownloadLogs": "Download generated logs for this invisipoint",
+          "viewFilterRules": "View Filter Rules",
+          "tooltipViewFilterRules": "View Configured filter rules for this invisipoint",
+          "configureFilterRles": "Configure Filter Rules",
+          "tooltipConfigureFilterRles": "Configure filter rules for this invisipoint",
+          "upgradeRemoteFirmware": "Upgrade Remote Firmware",
+          "tooltipUpgradeRemote": "Upgrade remote firmware for this invisipoint",
+          "clearFilterRules": "Clear Filter Rules",
+          "tooltipClearFilterRules": "Clear filter rules for this invisipoint"
+        },
+        "requestLogFileModal": {
+          "loadin": "Fetching Task Status...",
+          "loadingValidating": "Validating Invisipoints...",
+          "title": "Request Log File",
+          "date": "Date",
+          "start": "Start",
+          "end": "End",
+          "message": "Above time values are in UTC.",
+          "errorText": "Error",
+          "submitButton": "Submit",
+          "cancelButton": "Cancel",
+          "inTaskMessage1": "The selected invisipoint already has a “Get Log” request.",
+          "inTaskMessage2": "Please wait for it to complete before trying to request logs for this invisipoint again.",
+          "requestLogAlert": {
+            "title": "Success",
+            "message": "Your request has been submitted. The logs will be available for download shortly."
+          },
+          "invalidStart": "Invalid start time",
+          "timeRange": "End time should be greater than {{ startTimeState }}",
+          "invalidEnd": "Invalid End time",
+          "endGreater": "End time should be greater than the start time.",
+          "endCurrent": "End time should not be greater than the current time.",
+          "taskInProgress": "A Task is already In-Progress.",
+          "requestDownload": {
+            "message1": "All {{ epCheckState }} requested for download logs.",
+            "message2": "Please wait for them to complete before trying to request download logs for those invisipoints again."
+          },
+          "Action Options": {
+            "Prompt": {
+              "Download Status Prompt": {
+                "Error": " Error downloading logs. Please try again.<0 /><0 />Details:<0 />",
+                "Download Failed": "Request to download logs failed.<0 /><0 />Error Details:<0 />"
+              }
+            }
+          }
+        },
+        "downloadLogsModal": {
+          "loadingText": "Loading...",
+          "title": "Download Logs",
+          "endpointName": "Invisipoint Name:",
+          "endpointSerial": "Invisipoint Serial:",
+          "logStart": "Log Start Date",
+          "logEnd": "Log End Date",
+          "logDelete": "Log Delete Date",
+          "action": "Action",
+          "confirm": "Confirm",
+          "cancel": "Cancel",
+          "tooltipDownload": "Download File",
+          "tooltipDelete": "Delete File",
+          "emptyMessag": "No Available Records...",
+          "utc": "Above time values are in UTC.",
+          "downloadLogsAlert": {
+            "title": "Error!",
+            "message": "Error downloading the logs. Please try again later.",
+            "errorDetails": "Error Details:",
+            "invalidResponse": "Invalid response received.",
+            "errorFetch": "Failed to fetch logs. Please try again."
+          },
+          "deleteConfirmation": {
+            "deleteConfirmText": "Delete Confirmation",
+            "message1": "You have initiated the process of deleting this log file.<0 /><0 />Click <1>Confirm</1> to delete, otherwise click <1>Cancel</1>."
+          },
+          "records": "No Records",
+          "Action Options": {
+            "Alert": {
+              "Error Text": "ERROR",
+              "Task Completed Text": "Task Completed"
+            },
+            "Prompt": {
+              "Deleting File Status": {
+                "Success": "Successfully deleted {{ fileName }}",
+                "Error": "error in deleting file"
+              }
+            }
+          }
+        },
+        "viewFilterRulesModal": {
+          "loadingError": "Something Went Wrong!",
+          "apiFilterRules": "API Filter Rules",
+          "titleCurrent": "Current Filter Rules",
+          "titleStaged": "Staged Filter Rules",
+          "noRecords": "No filter rules configured.",
+          "errorFetch": "Failed to fetch filter rules. Please try again.<0 /><0 />Details:<0 />",
+          "errorTemplate": "Failed to fetch filter rule templates. Please try again.<0 /><0 />Details:<0 />",
+          "errorStaged": "Failed to fetch staged filter rule tasks. Please try again.<0 /><0 />Error Details:<0 />",
+          "templateStaged": "Failed to fetch staged filter rule templates. Please try again.<0 /><0 />Details:<0 />",
+          "stagesTask": "Failed to fetch staged filter rule tasks. Please try again.<0 /><0 />Error Details:<0 />",
+          "stagedFilterRules": "Failed to fetch staged filter rules. Please try again.<0 /><0 />Details:<0 />",
+          "details": "Error Details:",
+          "templateName": "Template Name",
+          "ruleNumber": "Rule #",
+          "description": "Description",
+          "sourceIp": "Source IP",
+          "sourcePort": "Source Port",
+          "destinationIp": "Destination IP",
+          "destinationPort": "Destination Port",
+          "protocol": "Protocol",
+          "action": "Action",
+          "trustedUntrusted": "Trusted / Untrusted",
+          "status": "Filter Rules Configuration Status in Invisipoint:",
+          "emptyMesagge": "No Staged Filter Rules."
+        },
+        "configureFilterRulesModal": {
+          "title": "Configure Filter Rules",
+          "loading": "Fetching Task Status...",
+          "validating": "Validating Invisipoints...",
+          "defaultRule": "Default Rule",
+          "rules": "RULES",
+          "somethingWentWrong": "Something Went Wrong!",
+          "adAuthServer": "AD Auth - Server",
+          "adAuthClient": "AD Auth - Client",
+          "networkManagement": "Network Management",
+          "taskMessage1": "The selected invisipoint already has a policy update task.",
+          "taskMessage2": "Please wait for it to complete before trying to configure/clear filter rule(s) for this invisipoint again.",
+          "taskRequired": "Please select at least one template (other than default template) to save and try again. To apply just the default filter rules, use clear filter rules.",
+          "ruleNumber": "Rule #",
+          "description": "Description",
+          "sourceIp": "Source IP",
+          "sourcePort": "Source Port",
+          "destinationIp": "Destination IP",
+          "destinationPort": "Destination Port",
+          "protocol": "Protocol",
+          "action": "Action",
+          "trustedUntrusted": "Trusted / Untrusted",
+          "resetButton": "Reset",
+          "cancelButton": "Cancel",
+          "savingButton": "Saving...",
+          "saveButton": "Save",
+          "link": "Link",
+          "unlink": "Unlink",
+          "message1": "inputs with label:",
+          "lmessage": "Once linked, updating one input will update other inputs with same label.",
+          "lmessage2": " <0>P.S.:</0> Note that if inputs have different values at the time of linking, value of input whose link button is clicked will be applied to all.",
+          "uMessage": "Once unlinked, updating one input won't update other inputs with same label.",
+          "alert": {
+            "titleSuccess": "Success",
+            "titleError": "Error"
+          },
+          "successSaving": "Filter rules configured successfully. The configure task has been queued and will complete shortly.",
+          "errorSaving": "Error configuring filter rules. Please try again.",
+          "details": "Error Details:",
+          "invalidsourceIp": "Source Port is invalid.",
+          "blankSourceIp": "Source IP cannot be empty.",
+          "validationText": "Source IP is incorrect",
+          "validationTooltip": "Source IP must be any one of the following:",
+          "sameMessage": "<0>Source IP and Destination IP can not be the same.<1 />Please, enter a different IP address!</0>",
+          "invalidDestinationIp": "Destination IP is invalid.",
+          "blankDestinationIp": "Destination IP cannot be empty.",
+          "validationDestination": "Destination IP is incorrect",
+          "validationDestinationTooltip": "Destination IP must be any one of the following:",
+          "resetCurrentValue": "Following aciton will clear the current values and reset to the template values.<0 /><0 /> Click <1>Confirm</1> to reset, otherwise click <1>Cancel</1>.",
+          "blankSourcePort": "Source Port cannot be empty.",
+          "sourcePortInvalid": "Source Port is invalid.",
+          "rangeSourcePort": "Source Port should be in the range of <b>0 - 65535</b>.",
+          "blankDestinationPort": "Destination Port cannot be empty.",
+          "destinationPortInvalid": "Destination Port is invalid.",
+          "rangeDestinationPort": "Destination Port should be in the range of <0>0 - 65535</0>.",
+          "invalidRules": {
+            "line1": "invalid input",
+            "line2": "found. Please correct the value",
+            "line3": "and try again."
+          },
+          "errorTask": "Error fetching configure filter rules task status. Please try again.",
+          "errorDetails": "Details:",
+          "loadingError": "Something Went Wrong!"
+        },
+        "upgradeRemoteFirmwareModal": {
+          "loading": "Fetching Task Status...",
+          "validating": "Validating Invisipoints...",
+          "title": "Upgrade Remote Firmware",
+          "currentVersion": "Current Firmware Version:",
+          "tacMessage": "Remote Firmware upgrade is restricted to role with <0>`TAC-ID`</0> only!",
+          "errorUpgrade": "Error upgrading remote firmware. Please try again. <0 /><0 />Details:<0 />",
+          "bulk1": "The selected invisipoint already has a Upgrade remote firmware task.",
+          "bulk2": "Please wait for it to complete before trying to upgrade the remote firmware for this invisipoint again.",
+          "bulk3": "All {{ epCheckState }} selected invisipoints already have a Upgrade remote firmware task.",
+          "bulk4": "Please wait for it to complete before trying to upgrade the remote firmware for this invisipoint again.",
+          "name": "Name",
+          "releaseVersion": "Release Version",
+          "product": "Product",
+          "cancelButton": "Cancel",
+          "applyingButton": "Applying...",
+          "applyButton": "Apply",
+          "uploadButton": "Upload New Firmware",
+          "emptyMessage": "Upload new firmware to see it here.",
+          "errorFetching": "Error viewing firmware list. Please try again.",
+          "details": "Details:",
+          "alert": {
+            "succesTitle": "Success",
+            "errorTitle": "Error",
+            "details": "Error Details:",
+            "successMessage": "Remote Firmware upgrade request has been submitted sucessfully.",
+            "errorMessage": "Error applying remote firmware upgrade. Please try again."
+          }
+        },
+        "clearFilterrules": {
+          "title": "Clear Filter Rules",
+          "validation": "Validating Invisipoint{{ isBulkAction }}...",
+          "fetching": "Fetching Task Status...",
+          "clearing": "Clearing Filter Rules...",
+          "loading": "Loading",
+          "error": "ERROR !!",
+          "taskCompletedText": "Task Completed",
+          "taskInProgress": "A Task is already In-Progress.",
+          "clearFilterrulesAlert": {
+            "title": "Success",
+            "message": "Clear Filter rules request submitted. The task has been queued and will complete shortly.",
+            "taskInProgress": "<0> The selected invisipoint already has a policy update task. <1 /> <1 /> Please wait for it to complete before trying to configure/clear filter rule(s) for this invisipoint again. </0>",
+            "errorFetching": "Error fetching clear filter rules task status. Please try again.",
+            "details": "Details:",
+            "closeButton": "Close"
+          }
+        },
+        "bulkTable": {
+          "leftTable": "List of Invisipoint {{ grammerly }} that will be pending",
+          "rightTable": "List of Invisipoint {{ grammerly }} that will be processed",
+          "name": "Name",
+          "serial": "Serial #",
+          "reason": "Reason",
+          "version": "FW Version",
+          "loading": "Loading...",
+          "portInvalid": "",
+          "progressTooltip": "A task is already In-progress",
+          "noTac": "This invisipoint is not a TAC-ID.",
+          "epcDisableTooltip": "Invisipoint is Disabled",
+          "remoteTooltip": "Remote Keying will show this option as disabled.",
+          "message": "Click <0>Continue</0> proceed Click <1> Cancel</1> to return to Invisipoints screen.",
+          "cancelButton": "Cancel",
+          "continueButton": "Continue",
+          "configurRulesError": "Error configuring filter rules. Please try again.\n\nError Details:\n-",
+          "Tool Tip": {
+            "Source IP Title": "Source IP is incorrect",
+            "Destination IP Title": " Destination IP is incorrect",
+            "Source Ip Description": "Source IP must be any one of the following:",
+            "Destination IP Description": "Destination IP must be any one of the following:",
+            "List": {
+              "Ipv4 Octet Section": "Valid <0>IPv4 Address</0> such as <1>1.2.3.4</1> with just octet sections.",
+              "Ipv4 Prefix Range": "Valid <0>IPv4 Address</0> with Prefix range between 8-32 such as <1>1.2.3.4/24</1>",
+              "Ipv6 Hextet Section": "Valid <0>IPv6 Address</0> such as <1>2001:db8:3333::0:00FF:08</1> with just hextet sections.",
+              "Ipv6 Prefix Range": "Valid <0>IPv6 Address</0> with prefix range between 48-128 such as <1>ff00::12ee/56</1>"
+            }
+          }
+        }
+      },
+      "Manage Firmware": {
+        "Upload Button": "Upload New Firmware",
+        "Upload Firmware File Modal": {
+          "Title": "Upload File",
+          "Line1": "Select Firmware file to upload",
+          "Line2": "(.tgz or tar bal)",
+          "Line3": "Max size:60 MB",
+          "Select Button": "Select File",
+          "Different Button": "Select Different File",
+          "File Name": "File Name",
+          "Release": "Release",
+          "Product": "Product",
+          "Cancel Button": "Cancel",
+          "Upload Button": "Upload",
+          "Proccess Uploading": "Processing uploaded file...",
+          "Tar": "Selected file has a wrong extension. Please select a valid tar ball.",
+          "Size": "Selected file is too large. Maximum allowed file size: 60 MB",
+          "Type": "Selected file has a wrong mime-type. Please select a valid tar ball.",
+          "Task Alert": {
+            "Title": "Task Completed",
+            "Message": "Firmware imported successfully. You may close this modal or upload another firmware."
+          },
+          "Error Alert": {
+            "Title": "ERROR !!",
+            "Message": "Error importing firmware.Please try again.",
+            "Details Title": "Details:",
+            "Ok Button": "Okay"
+          },
+          "Name Mandatory": "Filename field is mandatory",
+          "Regex": "Field accepts '-' and Alphanumerics only",
+          "Valid Version": "Please provide an valid version number",
+          "Release Mandatory": "Release field is mandatory",
+          "Valid Release": "Please enter valid release version number, EG: X.X.X.X",
+          "Release Regex": "Release number cannot ends with '.', EG: X.X.X.X",
+          "Invalid Version": "Please provide an valid release version number",
+          "Product Mandatory": "Product field is mandatory",
+          "Product Regex": "Please provide an valid product name, EG: invisinet-net-apps",
+          "Product Sample": "Product field cannot end with '-', XXX-XXX"
+        },
+        "Action Options": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Delete Confirmation",
+              "Delete Confirm Content": "You have initiated the process of deleting this firmware<0 /><0 />Click <1>Confirm</1> to delete, otherwise click<1>Cancel</1>.",
+              "Success": "Remote firmware with name `{{ fileName }}` deleted successfully.",
+              "Error": "Error deleting Remote firmware with name `{{ fileName }}`. Please try again.<0 /><0 />Details:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Edit Filter",
+            "Delete": "Delete Filter"
+          }
+        }
+      },
+      "Task Status": {
+        "Fetch Status": {
+          "Error": {
+            "Title": "Error Happened",
+            "Content": "<0> Unable to fetch or load more records from server  </0> <0> Error Info: </0>"
+          }
+        },
+        "Action Options": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Delete Confirmation",
+              "Delete Confirm Content": " You have initiated the process of deleting this task<0 /><0 />Click <1>Confirm</1> to delete, otherwise click<1>Cancel</1>.",
+              "Success": "Invisipoint Task Status `{{ taskStatus }}` deleted successfully.",
+              "Error": "Error deleting Invisipoint Task Status `{{ taskStatus }}`. Please try again.<0 /><0 />Details:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Edit Task Status",
+            "Delete": "Delete Task Status"
+          }
+        }
+      },
+      "Log Files": {
+        "Fetch Status": {
+          "Error": {
+            "Title": "Error Happened",
+            "Content": "<0> Unable to fetch or load more records from server  </0> <0> Error Info: </0>"
+          }
+        },
+        "Action Options": {
+          "Header Name": "Action",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Delete Confirmation",
+              "Delete Confirm Content": " You have initiated the process of deleting this log file.<0 /><0 />Click <1>Confirm</1> to delete, otherwise click<1>Cancel</1>.",
+              "Success": "Invisipoint Log File `{{ fileName }}` deleted successfully.",
+              "Error": "Error deleting Invisipoint Log File `{{ fileName }}`. Please try again.<0 /><0 />Details:<0 />"
+            },
+            "Download Status Prompt": {
+              "Errors": {
+                "Invalid Response": "<0>Error downloading the logs. Please try again later.</0><1 />Error Details:<1 /><0>Invalid response received.</0>",
+                "Error Details": "<0>Error downloading the logs. Please try again later.</0>Error Details:<1 />"
+              }
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Edit File",
+            "Delete": "Delete File",
+            "Download": "Download File"
+          }
+        }
+      }
+    },
+    "maintainance": {
+      "reboot": {
+        "haltGateway": {
+          "haltText": "Halt",
+          "title": "Halt {{ console }}",
+          "buttonName": "Halt {{ console }}",
+          "action": {
+            "prompt": {
+              "confirm": {
+                "text": "Are you sure you want to Halt this {{ console }}?",
+                "description": "The {{ console }} will be unreachable until {{ type }} restarted.",
+                "continueButton": "Continue",
+                "cancelButton": "Cancel"
+              }
+            }
+          },
+          "description": "Halting the {{ console }} will cause it to shutdown and will no longer pass any traffic. The {{ console }} will need to be physically restarted to pass traffic again. If you would like to proceed please click the Halt {{ console }} button below."
+        },
+        "rebootGateway": {
+          "rebootText": "Reboot",
+          "title": "Reboot {{ console }}",
+          "buttonName": "Reboot {{ console }}",
+          "action": {
+            "prompt": {
+              "confirm": {
+                "text": "Are you sure you want to Reboot this {{ console }}?",
+                "description": "The {{ console }} will be unreachable until {{ type }} restarted.",
+                "continueButton": "Continue",
+                "cancelButton": "Cancel"
+              }
+            }
+          },
+          "description": "Rebooting the {{ console }} will cause the {{ console }} to temporarily not pass traffic until the restart has completed. If you would like to proceed please click the Reboot {{ console }} button below."
+        }
+      }
+    }
+  }
+}

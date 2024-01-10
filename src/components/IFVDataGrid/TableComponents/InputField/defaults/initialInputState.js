@@ -1,0 +1,17 @@
+export const initialInputState = {
+  isPristine: true,
+  isDirty: false,
+  isRestore: false,
+  isValid: false,
+  labelState: "",
+  valueState: "",
+  dateState: "",
+  timeState: "",
+  dateTimeState: "",
+  dropDownState: "",
+  borderColorState: "",
+  toggleState: "",
+  helperText: "",
+  dropDownList: [],
+  toggleOptions: [],
+};

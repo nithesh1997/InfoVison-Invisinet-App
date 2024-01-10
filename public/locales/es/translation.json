@@ -1,0 +1,2491 @@
+{
+  "commons": {
+    "notConfiguredText": "No configurado",
+    "setupText": "Setup",
+    "configureText": "Configurar",
+    "editText": "Editar",
+    "deleteText": "Eliminar",
+    "saveText": "Guardar",
+    "savingText": "Guardando...",
+    "resetText": "Reiniciar",
+    "retryText": "Reintentar",
+    "Not Set": "No establecido",
+    "Retry Successful": "Reintentar exitoso",
+    "doneText": "Guardar",
+    "appName": "{{ ProjectName }} Consola de administración",
+    "loadingText": "Cargando",
+    "loadingPageText": "Cargando una experiencia increíble para ti",
+    "successText": "Terminada",
+    "continueText": "Continuar",
+    "confirmText": "Confirmar",
+    "cancelText": "Cancelar",
+    "errorText": "Error",
+    "okayText": "Vale",
+    "serverText": "Servidor",
+    "gatewayText": "Invisigate",
+    "viewText": "Ver más",
+    "enableText": "Activar",
+    "disableText": "Desactivar",
+    "enabledText": "Activado",
+    "disabledText": "Desactivado",
+    "enablingText": "Activando",
+    "disablingText": "Desactivando",
+    "rightsReservedText": "Reservado todos los derechos",
+    "selectText": "Seleccionar",
+    "deselectText": "Deseleccionar",
+    "excludeFrom": "excluir de",
+    "includeIn": "incluido en",
+    "ApplyText": "Aplicar",
+    "SearchText": "Buscar",
+    "TooltipCancel": "Cancelar",
+    "TooltipSave": "Guardar",
+    "TaskCompleted": "Información",
+    "errorAlertTitle": "ERROR..!",
+    "login": {
+      "title": "Iniciar sesión",
+      "warning": "El usuario {{ userName }} está restringido al inicio de sesión."
+    },
+    "logout": {
+      "overtime": {
+        "message": "Se ha terminado la sesión por motivos de seguridad. Vuelva a iniciar sesión para reanudar su trabajo."
+      },
+      "warning": {
+        "restricted": "Cerrar sesión en ⏱️ {{ timeout }}"
+      }
+    },
+    "gateway": {
+      "prompt": {
+        "certificate": {
+          "expired": {
+            "title": "Caducidad del certificado de invisigate",
+            "case1": {
+              "error": {
+                "0": "Gateway <1>({{ gatewayName }})</1> expira hoy",
+                "1": "Actualice el certificado para evitar la inaccesibilidad al portal."
+              }
+            },
+            "case2": {
+              "error": {
+                "0": "El invisigate <1>({{ gatewayName }})</1> caducó <1>{{ daysToGo }}</1> hace día(s).",
+                "1": "Actualice el certificado para evitar la inaccesibilidad al portal."
+              }
+            },
+            "case3": {
+              "error": {
+                "0": "El invisigate <3>({{ gatewayName }})</3> está a punto de caducar en <3>{{ gatewayExpiryDays }}</3> día(s).",
+                "1": "Actualice el certificado para evitar la inaccesibilidad al portal."
+              }
+            }
+          },
+          "gatewayError": {
+            "title": "Error en invisigate",
+            "error": {
+              "0": "El invisigate actual enfrenta algunos problemas",
+              "1": "Cambie el invisigate"
+            }
+          }
+        }
+      },
+      "banner": {
+        "noneSelected": "NO HAY GATEWAY SELECCIONADO",
+        "peak": {
+          "title": "Administrar Invisigate/Servidor",
+          "info": "invisigates/Servidores Conectados {{ gatewayCount }}"
+        },
+        "prompt": {
+          "switch": "Cambiar al invisigate activo"
+        }
+      },
+      "manage": {
+        "search": {
+          "text": "Buscar invisigate/servidores"
+        },
+        "add": {
+          "title": "Agregar Invisigate/Servidor",
+          "info": {
+            "0": "¿Cuál es la dirección del invisigate/servidor que le gustaría agregar?",
+            "1": "También puede ingresar un FQDN."
+          },
+          "inputLabel": "Dirección invisigate/servidor",
+          "buttonName": "Agregar invisigate/servidor",
+          "prompt": {
+            "mandatory": "La dirección IP es un campo obligatorio.",
+            "selectActive": "Para cambiar de invisigate/servidor, seleccione uno de la lista anterior.",
+            "addSuccess": "Invisigate/Servidor agregada con éxito",
+            "error": {
+              "addError": {
+                "0": "Error al agregar el invisigate. Inténtalo de nuevo.",
+                "1": "Detalles: "
+              }
+            },
+            "validation": {
+              "address": {
+                "0": "La dirección debe ser",
+                "1": "Una <1>dirección IP</1> válida como <3>14.234.212.23</3>",
+                "2": "O un <1>FQDN (Nombre de dominio completo) válido</1> como"
+              },
+              "ipStandard": {
+                "message": "La dirección proporcionada no es válida ",
+                "tooltip": {
+                  "0": "La dirección del invisigate/servidor debe ser como las siguientes",
+                  "1": "<1>Dirección IPv4</1> válida con secciones de octeto como <3>1.2.3.4</3>",
+                  "2": "<1>Dirección IPv6</1> con secciones de hexteto como <3>2001:db8:3333:4444:5555:6666:7777:8888</3>",
+                  "3": "<1>FQDN (Nombre de dominio completo)</1> válido como"
+                }
+              }
+            }
+          }
+        },
+        "select": {
+          "title": "Invisigate/servidor seleccionado",
+          "buttonName": "Guardar & Continuar",
+          "confirm": {
+            "0": "<4>Nombre: </4> {{ gatewayName }} | <4>Dirección: </4> {{ gatewayAddress }}",
+            "1": "Haga clic en <1>\"Guardar y continuar\"</1> para cambiar al invisigate/servidor anterior"
+          },
+          "warning": {
+            "noGatewaySelected": "No hay invisigates/servidores disponibles para la selección. Agregue uno para continuar más en la aplicación."
+          }
+        },
+        "table": {
+          "columns": {
+            "console": "Invisigate/servidor",
+            "address": "Dirección IP",
+            "certExpireOn": "El certificado caduca el",
+            "offline": "Fuera de línea",
+            "type": "Tipo",
+            "UDP": "UDP",
+            "tokenDatagram": "Eliminación de token de datagrama"
+          },
+          "action": {
+            "delete": {
+              "tooltip": "Eliminar invisigate"
+            }
+          },
+          "prompt": {
+            "loadingText": "Cargando la última lista de invisigates",
+            "confirmDelete": {
+              "title": "Confirmando eliminación",
+              "text": "¿Estás seguro de que quieres eliminar el invisigate/servidor?"
+            }
+          }
+        }
+      }
+    },
+    "errorPage": {
+      "404": {
+        "title": "404 NO ENCONTRADA",
+        "message": "Lo sentimos, no pudimos encontrar la página que solicitó",
+        "buttonName": "Soporte Técnico"
+      },
+      "title": "¡Vaya",
+      "error": {
+        "description": {
+          "0": "Parece que hemos tenido un problema!! Nuestras más sinceras disculpas por las molestias. Vuelva a intentarlo actualizando la página.",
+          "1": "Póngase en contacto con soporte técnico si el problema persiste."
+        }
+      }
+    },
+    "table": {
+      "addRecord": {
+        "name": "Agregar registro",
+        "tooltip": "Agregar registro"
+      },
+      "MoreActions": {
+        "bulkActions": {
+          "text": "Acciones masivas"
+        }
+      },
+      "header": {
+        "checkbox": {
+          "tooltip": "{{ isSelected }} todas las filas recuperadas para {{ isIncluded }} la acción masiva"
+        },
+        "sort": {
+          "tooltip": {
+            "descendingText": "Descendente",
+            "ascendingText": "Ascendente"
+          }
+        },
+        "filter": {
+          "label": "Buscar {{ labelName }}"
+        }
+      },
+      "content": {
+        "noContentMessage": "Agregue un registro para ver los datos de la tabla aquí."
+      },
+      "footer": {
+        "pagination": {
+          "noPageToPaginate": "Las opciones de paginación aparecerán cuando haya al menos un registro para mostrar.",
+          "paginationInfo": {
+            "0": "Visualización",
+            "1": "registros por página"
+          },
+          "pageDropDown": "Lista de opciones para el número de filas por página",
+          "actions": {
+            "goToFirstPageText": "Primera página",
+            "goToPreviousPageText": "Página anterior",
+            "goToNextPageText": "Siguiente página",
+            "goToLastPageText": "Última página"
+          },
+          "selectedRows": "filas seleccionadas"
+        }
+      },
+      "modal": {
+        "addRecord": "Agregar registro",
+        "editRecord": "Editar registro"
+      }
+    },
+    "Component": {
+      "Table Content": {
+        "Thead Text": {
+          "Trusted Text": "Confiable",
+          "Un-Trusted Text": "No confiable"
+        },
+        "Action Option": {
+          "Header Name": "Acciónes",
+          "Prompt": {
+            "Delete Confirm Prompt": {
+              "Delete Confirm Title": "Confirmando eliminación",
+              "Delete Confirm Content": "Ha iniciado el proceso de eliminación de este {{ actionComponent }} <0 /><0 />Haga clic en <1>Confirmar</1> para eliminarlo; de lo contrario, haga clic en <1>Cancelar</1>.",
+              "Success": "{{ pageName }} con el nombre `{{ rowName }}` eliminado con éxito.",
+              "Error": "Error al eliminar {{ pageName }} con el nombre `{{ rowName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "{{ pageName }} con el nombre `{{ rowName }}` guardado correctamente.",
+              "Error": "Error al guardar {{ pageName }} con el nombre `{{ rowName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Editar {{ pageName }}",
+            "Delete": "Eliminar {{ pageName }}",
+            "Save": "",
+            "Cancel": ""
+          }
+        },
+        "Name Field": {
+          "Header Name": "Nombre",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El nombre es un campo obligatorio.",
+              "Alpha-Numeric Only": "Sólo caracteres alfanuméricos son permitidos.",
+              "Char Atleast Should Be": "El campo de nombre debe tener al menos 4 caracteres",
+              "Charater Less Then Value": "El campo de nombre permitirá 63 caracteres o menos."
+            }
+          }
+        },
+        "Group Field": {
+          "Header Name": "Grupo",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El grupo es un campo obligatorio."
+            }
+          }
+        },
+        "Trust Level Field": {
+          "Header Name": "Nivel de confianza",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El nivel de confianza es un campo obligatorio.",
+              "Numbers Only": "El valor del nivel de confianza solo puede ser un número.",
+              "Trust Level values range": "Los valores del nivel de confianza oscilan entre 0 y 7, donde 0 es el nivel de seguridad más bajo, mientras que 7 es el nivel de seguridad más alto."
+            }
+          }
+        },
+        "Priority": {
+          "Header Name": "Prioridad",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "La prioridad es un campo obligatorio."
+            }
+          }
+        },
+        "Ip Address Field": {
+          "Header Name": "Dirección IP",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "La dirección IP es un campo obligatorio.",
+              "Enter Ip or Mac Address": "Error: debe ingresar una dirección IP o una dirección MAC.",
+              "Invalid Prefix 48 through 128": "Valor de prefijo IPv6 no válido. El prefijo debe ser un número entero de 48 a 128.",
+              "Invalid Prefix 8 through 32": "Valor de prefijo IPv4 no válido. El prefijo debe ser un número entero del 8 al 32.",
+              "Tooltip Prefix Text": "La dirección IP no es válida"
+            },
+            "Tool Tip": {
+              "Message": {
+                "Ip Address Description": "La dirección IP debe ser como de las siguientes:",
+                "List": {
+                  "Ipv4 Octet Section": "<0>Dirección IPv4</0> válida como <1>1.2.3.4</1> con solo secciones de octetos.",
+                  "Ipv4 Prefix Range": "<0>Dirección IPv4</0> válida con un rango de prefijo entre 8 y 32, como <1>1.2.3.4/24</1>",
+                  "Ipv6 Hextet Section": "<0>Dirección IPv6</0> válida como <1>2001:db8:3333::0:00FF:08</1> con solo secciones hexteto.",
+                  "Ipv6 Prefix Range": "<0>Dirección IPv6</0> válida con un rango de prefijos entre 48 y 128, como <1>ff00::12ee/56</1>"
+                }
+              }
+            }
+          }
+        },
+        "MAC Field": {
+          "Header Name": "MAC",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "La dirección MAC es un campo obligatorio.",
+              "Enter Ip or Mac Address": "Error: debe ingresar una dirección IP o una dirección MAC.",
+              "Mac Incorrect": "El campo de dirección MAC es incorrecto."
+            }
+          }
+        },
+        "Comment Field": {
+          "Header Name": "Comentario",
+          "Validation": {
+            "Errors": {
+              "Comment allow 63 or less Char": "El campo de comentario permitirá 63 caracteres o menos.",
+              "Comment allow 1024 or less Char": "El campo de comentario permitirá 1024 caracteres o menos."
+            }
+          }
+        },
+        "TCP Tagging Field": {
+          "Header Name": "Etiquetado TCP",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El etiquetado TCP es un campo obligatorio."
+            }
+          }
+        },
+        "Remote Key Field": {
+          "Header Name": "Clave remota",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El campo Clave remota es un campo obligatorio."
+            }
+          }
+        },
+        "Enabled Field": {
+          "Header Name": "Activado",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El campo activado es un campo obligatorio."
+            }
+          }
+        },
+        "UDP Field": {
+          "Header Name": "UDP",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El campo UDP es un campo obligatorio."
+            }
+          }
+        },
+        "IP Address/Prefix Field": {
+          "Header Name": "Dirección IP/Prefijo",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Dirección IP/Prefijo es un campo obligatorio.",
+              "Incorrect": "La dirección IP proporcionada es incorrecta.",
+              "Invalid Prefix 48 and 128": "Valor de prefijo IPv6 no válido. El prefijo debe ser un número entero entre 48 y 128.",
+              "Invalid Prefix 8 through 32": "Valor de prefijo IPv4 no válido. El prefijo debe ser un número entero del 8 al 32.",
+              "Ip Address Incorrect": "La dirección IP proporcionada es incorrecta."
+            }
+          }
+        },
+        "Members Field": {
+          "Header Name": "Miembros",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Se debe seleccionar al menos un recurso protegido.",
+              "Resources Not Exceed": "La lista de recursos no puede exceder más de 8 recursos protegidos"
+            }
+          }
+        },
+        "App Field": {
+          "Header Name": "App",
+          "Validation": {
+            "Errors": {}
+          }
+        },
+        "Action Field": {
+          "Header Name": "Acción",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El campo de acción es obligatorio."
+            }
+          }
+        },
+        "Protected Resource(s) Field": {
+          "Header Name": "Recurso(s) protegido(s)",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Recurso(s) protegido(s) es/son un campo obligatorio."
+            }
+          }
+        },
+        "Group(s) Field": {
+          "Header Name": "Grupo(s)",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Grupo(s) es un campo obligatorio.",
+              "Invalid": "El campo Grupo(s) no puede contener ningún carácter especial."
+            }
+          }
+        },
+        "Protocol Field": {
+          "Header Name": "Protocolo",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El protocolo es un campo obligatorio.",
+              "Invalid": "El protocolo no es válido."
+            }
+          }
+        },
+        "All Identity Groups Field": {
+          "Header Name": "Todos los grupos de identidad",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El campo Todos los grupos de identidad no está seleccionado."
+            }
+          }
+        },
+        "vLan ID Field": {
+          "Header Name": "ID de vLan",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El ID de vLAN debe contener solo dígitos. Puede dejarse vacío.",
+              "Vaild Number Between": "El ID de vLAN debe ser un número válido entre 0 y 4095."
+            }
+          }
+        },
+        "Port Name Field": {
+          "Header Name": "Nombre del puerto",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El nombre del puerto es un campo obligatorio",
+              "Limit": "No se pueden vincular más de 16 puertos."
+            }
+          }
+        },
+        "File Name Field": {
+          "Header Name": "Nombre del archivo"
+        },
+        "Date & Time Field": {
+          "Header Name": "Fecha y hora"
+        },
+        "Configuration Field": {
+          "Header Name": "Configuración"
+        },
+        "Software Version Field": {
+          "Header Name": "Versión del software"
+        },
+        "Created Date Field": {
+          "Header Name": "Fecha de creación"
+        },
+        "Number Field": {
+          "Header Name": "Número",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El número es un campo obligatorio.",
+              "Only Number": "El valor en el campo Número no es correcto.",
+              "Range": "El campo numérico debe estar en el rango 0-1020."
+            }
+          }
+        },
+        "Source IP Field": {
+          "Header Name": "IP de origen",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "La IP de origen es un campo obligatorio.",
+              "Invalid": "La IP de origen no es válida.",
+              "Invalid Prefix 48 and 128": "Valor de prefijo IPv6 no válido. El prefijo debe ser un número entero entre 48 y 128.",
+              "Invalid Prefix 8 through 32": "Valor de prefijo IPv4 no válido. El prefijo debe ser un número entero del 8 al 32."
+            }
+          }
+        },
+        "Source Port Field": {
+          "Header Name": "Puerto de origen",
+          "Validation": {
+            "Errors": {
+              "Invalid": "El puerto de origen no es válido.",
+              "Range": "El campo Puerto de origen debe estar en el rango de 1-65535."
+            }
+          }
+        },
+        "Destination IP Field": {
+          "Header Name": "IP de destino",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "La IP de destino es un campo obligatorio.",
+              "Invalid": "La IP de destino no es válida.",
+              "Valid Prefix 48 through 128": "Valor de prefijo IPv6 no válido. El prefijo debe ser un número entero de 48 a 128.",
+              "Valid Prefix 8 through 32": "Valor de prefijo IPv4 no válido. El prefijo debe ser un número entero del 8 al 32."
+            }
+          }
+        },
+        "Destination Port Field": {
+          "Header Name": "Puerto de destino",
+          "Validation": {
+            "Errors": {
+              "Invalid": "El puerto de destino no es válido.",
+              "Range": "El campo Puerto de destino debe estar en el rango de 1-65535."
+            }
+          }
+        },
+        "Destination Field": {
+          "Header Name": "Destino",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El destino es un campo obligatorio.",
+              "Range": "El destino puede contener solo un máximo de 7 direcciones de host"
+            }
+          }
+        },
+        "Rule Action Field": {
+          "Header Name": "Acción de regla",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "La acción es un campo obligatorio."
+            }
+          }
+        },
+        "Description Field": {
+          "Header Name": "Descripción"
+        },
+        "Serial Field": {
+          "Header Name": "Número de serie"
+        },
+        "Roles Field": {
+          "Header Name": "Roles",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Roles es un campo obligatorio."
+            }
+          }
+        },
+        "Location Field": {
+          "Header Name": "Ubicación",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "La ubicación es un campo obligatorio."
+            }
+          }
+        },
+        "Certificate Field": {
+          "Header Name": "Certificado",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El certificado es un campo obligatorio."
+            }
+          }
+        },
+        "Algorithm Field": {
+          "Header Name": "Algoritmo",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El algoritmo es un campo obligatorio."
+            }
+          }
+        },
+        "Timeout Field": {
+          "Header Name": "Tiempo de espera",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El tiempo de espera es un campo obligatorio.",
+              "Invalid": "El valor de tiempo de espera debe ser un número válido.",
+              "Range": "El valor de tiempo de espera debe oscilar entre 3600 y 65534 (segundos)."
+            }
+          }
+        },
+        "Heartbeat Interval Field": {
+          "Header Name": "Intervalo de latidos",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El intervalo de latidos es un campo obligatorio.",
+              "Invalid": "El intervalo de latidos debe ser un número válido.",
+              "Range": "El valor del intervalo de latidos debe ser inferior a la mitad del valor de tiempo de espera."
+            }
+          }
+        },
+        "DIR FQDN Field": {
+          "Header Name": "DIR FQDN",
+          "Validation": {
+            "Prompt": ""
+          }
+        },
+        "TAC Mutual Auth Field": {
+          "Header Name": "Autorización mutua de TAC",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "El campo de autorización mutua de TAC es un campo obligatorio."
+            }
+          }
+        },
+        "Firmware Version Field": {
+          "Header Name": "Versión de firmware"
+        },
+        "SKU Field": {
+          "Header Name": "SKU"
+        },
+        "Certificate Expiry Field": {
+          "Header Name": "Caducidad del certificado",
+          "Validation": {
+            "Errors": {
+              "Expired": "El certificado de el invisipoint ha caducado.",
+              "Expired In Days": "El certificado de el invisipoint caduca en {{ days }} días."
+            }
+          }
+        },
+        "Release Version Field": {
+          "Header Name": "Versión de lanzamiento"
+        },
+        "Product Field": {
+          "Header Name": "Producto"
+        },
+        "Task Type Field": {
+          "Header Name": "Tipo de tarea"
+        },
+        "Status Field": {
+          "Header Name": "Estado"
+        },
+        "Status Notes Field": {
+          "Header Name": "Notas de estado"
+        },
+        "Endpoint Name Field": {
+          "Header Name": "Nombre del invisipoint"
+        },
+        "Log File Name Field": {
+          "Header Name": "Nombre del archivo de registro"
+        },
+        "Log Start Date Field": {
+          "Header Name": "Fecha de inicio del registro"
+        },
+        "Log End Date Field": {
+          "Header Name": "Fecha de finalización del registro"
+        },
+        "Log Delete Date Field": {
+          "Header Name": "Fecha de eliminación del registro"
+        },
+        "ID Field": {
+          "Header Name": "ID"
+        },
+        "File ID Field": {
+          "Header Name": "ID de archivo"
+        },
+        "Staged Date Field": {
+          "Header Name": "Fecha de preparación"
+        },
+        "IPv4 Field": {
+          "Header Name": "IPv4"
+        },
+        "IPv6 Field": {
+          "Header Name": "IPv6"
+        },
+        "Trusted Flag Field": {
+          "Header Name": "Bandera de confianza",
+          "Validation": {
+            "Errors": {
+              "Mandatory": "Bandera de confianza es un campo obligatorio."
+            }
+          }
+        }
+      }
+    },
+    "successMessages": {
+      "configuration": "Configuración guardada exitosamente."
+    },
+    "errorMessages": {
+      "errorDetails": "Detalles de error:",
+      "configuration": "No se pudo guardar la configuración. Inténtalo de nuevo.",
+      "appError": "Error al guardar la aplicación con el nombre \"{{ rowName }}\". Inténtalo de nuevo.",
+      "epcError": "Error al agregar el invisipoint. Inténtalo de nuevo.",
+      "errorSavingEpc": "Error al guardar el invisipoint con nombre \"{{ name }}\" y serial \"{{ epcclient_ID }}\". Inténtalo de nuevo.",
+      "errorDeletingEpc": "Error al eliminar el invisipoint con nombre \"{name}\" y serial \"{epcclient_ID}\". Inténtalo de nuevo.",
+      "errorDownloadLog": "Error al descargar los registros. Por favor, inténtelo de nuevo más tarde.",
+      "invalidResponse": "Se recibió una respuesta no válida.",
+      "errorFetching": "Error al cargar las plantillas de reglas de filtro. Inténtalo de nuevo.",
+      "erroraddingFilterRule": "Error al agregar la regla de filtro con el número \"{{ ruleNum }}\". Inténtalo de nuevo.",
+      "errorDeletingFilterRule": "No se pudo eliminar la regla de filtro con el número \"{{ ruleNum }}\". No se puede guardar una regla de filtro sin eliminarla primero. Inténtalo de nuevo.",
+      "errorStatus": "Error {{ statusType }} regla de filtro con el número \"{{ ruleNum }}\". Inténtalo de nuevo.",
+      "errorTaskName": "No se pudo realizar {{ taskName }}. Inténtalo de nuevo.",
+      "errorDeletingGateway": "Error al eliminar el invisigate/servidor con nombre ({{ name }}). Inténtalo de nuevo.",
+      "errorLoadingGatewayList": "Error al cargar la lista de invisigate/servidor. Inténtalo de nuevo.",
+      "syslogSwitch": "Error en el conmutador syslog. Inténtalo de nuevo.",
+      "errorInSyslog": "Error en el sistema remoto. Inténtalo de nuevo.",
+      "errorTextSyslog": "Error {{ text }} en el sistema remoto. Inténtalo de nuevo.",
+      "errorFetchingFile": "¡Error obteniendo el archivo! Inténtalo de nuevo",
+      "errorImportingFile": "Error al importar el archivo. Inténtalo de nuevo",
+      "errorSwitchingGlobalTrust": "Error al cambiar el nivel de confianza global. Inténtalo de nuevo.",
+      "removeGateway": "No se pudo eliminar el invisigate \"{{ name }}\". Inténtalo de nuevo.",
+      "backupConfiguration": "No se pudo realizar la copia de seguridad de la configuración. Inténtalo de nuevo.",
+      "restoreConfiguration": "No se pudo restaurar desde {{ isRestoreFromRescue }}. Inténtalo de nuevo.",
+      "rescue": "configuración de rescate",
+      "saved": "última configuración guardada",
+      "importingConfiguration": "Error al importar el archivo de configuración. Inténtalo de nuevo.",
+      "task": "No se pudo realizar {{ taskName }}. Inténtalo de nuevo.",
+      "failedDelete": "No se pudo eliminar. Inténtalo de nuevo.",
+      "failedExport": "No se pudo exportar. Inténtalo de nuevo.",
+      "errorDeletingConfiguration": "Error al eliminar la configuración de {{ GATEWAY }} \"{{ fileName }}\". Inténtelo de nuevo."
+    }
+  },
+  "header": {
+    "logout": {
+      "action": {
+        "error": {
+          "logoutFailed": "No se pudo cerrar la sesión. Inténtalo de nuevo."
+        }
+      },
+      "button": {
+        "tooltip": "Cerrar sesión"
+      }
+    },
+    "Savebutton": {
+      "tooltip": "Configuración de {{ console }} a guardar"
+    },
+    "notification": {
+      "button": {
+        "tooltip": "Notificaciones"
+      },
+      "prompt": {
+        "noNotifications": "Actualmente no hay notificaciones",
+        "action": {
+          "delete": {
+            "error": {
+              "0": "No se puede eliminar la notificación. Inténtalo de nuevo",
+              "1": "Detalles del error"
+            }
+          },
+          "fetch": {
+            "error": {
+              "0": "Error al obtener notificaciones",
+              "1": "Detalles del error"
+            }
+          }
+        }
+      },
+      "portal": {
+        "title": "Notificaciones",
+        "button": {
+          "viewAll": {
+            "name": "Ver más"
+          }
+        }
+      }
+    }
+  },
+  "navigation": {
+    "home": {
+      "text": "Inicio",
+      "sub": {
+        "dashboard": {
+          "text": "Interface"
+        }
+      }
+    },
+    "dashboard": {
+      "text": "Interface",
+      "sub": {}
+    },
+    "manage": {
+      "text": "Administrar",
+      "sub": {
+        "identities": {
+          "text": "Identidades"
+        },
+        "protectedResources": {
+          "text": "Recursos protegidos"
+        },
+        "resourceLists": {
+          "text": "Listas de recursos"
+        },
+        "unprotectedResources": {
+          "text": "Recursos desprotegidos"
+        },
+        "rules": {
+          "text": "Reglas"
+        },
+        "trustLevel": {
+          "text": "Nivel de confianza"
+        }
+      }
+    },
+    "configure": {
+      "text": "Configuración",
+      "sub": {
+        "dnsTacMode": {
+          "text": "DNS & Modo TAC"
+        },
+        "layer3": {
+          "text": "Capa3"
+        },
+        "applications": {
+          "text": "Aplicaciones"
+        },
+        "settings": {
+          "text": "Configuración"
+        },
+        "configurationLogs": {
+          "text": "Archivos de configuración"
+        }
+      }
+    },
+    "gatewayserver": {
+      "text": "Invisigate/servidor",
+      "sub": {
+        "services": {
+          "text": "Servicios"
+        },
+        "filterRules": {
+          "text": "Reglas de filtro"
+        }
+      }
+    },
+    "endpoint": {
+      "text": "Invisipoint",
+      "sub": {
+        "configure": {
+          "text": "Configuración"
+        },
+        "firmware": {
+          "text": "Administrar firmware"
+        },
+        "taskStatus": {
+          "text": "Estado de tareas"
+        },
+        "logFiles": {
+          "text": "Archivos de registro"
+        }
+      }
+    },
+    "maintain": {
+      "text": "Mantenimiento",
+      "sub": {
+        "reboot": {
+          "text": "Reiniciar"
+        }
+      }
+    },
+    "ifvdgDevelopment": {
+      "text": "Desarrollo IFVDG",
+      "sub": {}
+    },
+    "dev": {
+      "text": "$Development",
+      "sub": {}
+    }
+  },
+  "page": {
+    "signIn": {
+      "userName": "Usuario",
+      "userHelperText": "Se requiere nombre de usuario.",
+      "password": "Contraseña",
+      "passwordHelperText": "La contraseña no puede estar vacía.",
+      "CapsLock": "¡Bloqueo de mayúsculas está activado!",
+      "greetMessage": {
+        "0": "Vamos a trabajar juntos",
+        "1": "Bienvenidos"
+      }
+    },
+    "home": {
+      "dashboard": {
+        "widget": {
+          "error": {
+            "title": "Error de widget",
+            "message": "Error al cargar los datos del widget. Vuelva a intentarlo o actualice la página."
+          },
+          "noContentText": "No hay estadísticas disponibles.",
+          "portal": {
+            "viewMoreText": "Ver más",
+            "title": {
+              "statistics": "Estadísticas",
+              "identities": "Identidades",
+              "summary": "Resumen",
+              "trustLevels": "Niveles de confianza",
+              "rules": "Reglas",
+              "services": "Servicios"
+            },
+            "search": {
+              "placeholder": "Buscar {{ name }}..."
+            },
+            "table": {
+              "thead": {
+                "statistics": "Estadísticas",
+                "trusted": "Confiable",
+                "untrusted": "No confiable",
+                "count": "Cantidad"
+              }
+            }
+          }
+        },
+        "statistics": {
+          "title": "Estadísticas",
+          "tooltip": "Recuento de registros de tráfico de aplicaciones",
+          "dropdown": {
+            "trusted": "Confiable",
+            "untrusted": "No confiable"
+          },
+          "tokenInsert": {
+            "text": "Inserción de token"
+          },
+          "tokenCollision": {
+            "text": "Colisión de fichas"
+          },
+          "tokenNotFound": {
+            "text": "Token no encontrado"
+          },
+          "tcpPktIn": {
+            "text": "Entrada de paquetes TCP"
+          },
+          "default": {
+            "text": "Por defecto"
+          }
+        },
+        "identities": {
+          "title": "Identidades",
+          "tooltip": "Muestra el número de identidades en cada grupo."
+        },
+        "summary": {
+          "title": "Resumen",
+          "tooltip": "Información del invisigate actualmente seleccionada.",
+          "certExpiryInfo": {
+            "0": "El certificado de el invisigate ha caducado.",
+            "1": "El certificado de el invisigate caduca en {{ number }} días."
+          },
+          "hostname": {
+            "tooltip": "Nombre de host"
+          },
+          "version": {
+            "tooltip": "Versión"
+          },
+          "firmwareVersion": {
+            "tooltip": "Versión de firmware del invisigate"
+          },
+          "uptime": {
+            "tooltip": "Tiempo de actividad"
+          },
+          "gwcertexpiryUTC": {
+            "tooltip": "Fecha de caducidad del certificado de invisigate"
+          },
+          "traffic_allowed": {
+            "tooltip": "Tráfico permitido en este invisigate"
+          }
+        },
+        "trustLevels": {
+          "levelText": "Nivel",
+          "title": "Niveles de confianza",
+          "tooltip": "Nivel de confianza frente a identidades y reglas configuradas.",
+          "label0": "Suma de identidades",
+          "label1": "Suma de Reglas"
+        },
+        "rules": {
+          "title": "Reglas",
+          "tooltip": "Muestra el número de reglas categorizadas por acción.",
+          "forward": "Adelante",
+          "drop": "Soltar",
+          "default": "Por defecto"
+        },
+        "services": {
+          "title": "Servicios",
+          "tooltip": "Estado actual de los servicios que se ejecutan en el invisigate seleccionada."
+        }
+      }
+    },
+    "manage": {
+      "identities": {
+        "bulkImport": {
+          "text": "Importación masiva"
+        },
+        "bulkImportStatus": {
+          "text": "Estado de importación masiva"
+        },
+        "Error Message": {
+          "Mac Or IP Mandatory": "Debe proporcionar una dirección IP o una MAC."
+        },
+        "Action Options": {
+          "Header Name": "Acción",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Confirmando eliminación",
+              "Delete Confirm Content": "Ha iniciado el proceso de eliminación de estas identidades <0 /><0 />Haga clic en <1>Confirmar</1> para eliminar; de lo contrario, haga clic en <1>Cancelar</1>.",
+              "Success": "Identidad con el nombre `{{ rowName }}` Eliminado con éxito.",
+              "Error": "Error al eliminar la identidad con el nombre `{{ rowName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "La identidad con el nombre `{{ rowName }}` se guardó correctamente.",
+              "Error": "Error al guardar la identidad con el nombre `{{ rowName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Editar identidades",
+            "Delete": "Eliminar identidades"
+          }
+        },
+        "Upload FileModal": {
+          "Title": "Subir Archivo",
+          "Upload Progress": "Carga en proceso...",
+          "Loading Message": "Obteniedo el estado de carga del archivo...",
+          "Line1": "Seleccione el archivo para cargar (.csv)",
+          "Line2": "Tamaño máximo: 60 MB",
+          "Line3": "Número máximo de archivos: 1000",
+          "Select Button": "Seleccione Archivo",
+          "Select Error Button": "Seleccione nuevo archivo",
+          "Download Button": "Descargar plantilla CSV",
+          "importSupport": "Solo se puede importar archivos solo para formato CSV",
+          "sizeExceeds": "El tamaño del archivo excede el tamaño máximo: 60 MB",
+          "FileMore": "No se permiten archivos de más de 1000 filas.",
+          "validHeader": "El archivo no tiene un encabezado válido",
+          "missingHeader": "Al archivo le falta encabezado",
+          "successResponse": "Archivo importado exitosamente."
+        },
+        "File Upload Status Modal": {
+          "Title": "Estado de carga de archivos",
+          "File Name": "Nombre del archivo",
+          "Uploaded On": "Subido en",
+          "Status": "Estado",
+          "Records": "No hay records disponibles",
+          "Action": "Acción"
+        },
+        "Import In Progress Modal": {
+          "Title": "Importación masiva en curso",
+          "File Name": "Nombre del archivo: {{ fileState }}",
+          "Uploaded On": "Subido en:"
+        },
+        "File Status Table": {
+          "File Id": "ID de archivo",
+          "Name": "Nombre",
+          "Status": "Estado",
+          "Status Notes": "Notas de estado",
+          "Staged Date": "Fecha de preparación",
+          "Group": "Grupo",
+          "Ipv4": "IPv4",
+          "Ipv6": "IPv6",
+          "Mac": "MAC",
+          "Trus tLevel": "Nivel de confianza",
+          "Udp": "UDP",
+          "Tcp Tagging": "Red TCP",
+          "Remote Key": "Clave de cifrado",
+          "Enabled": "Activado",
+          "Comment": "Comentario"
+        },
+        "Table Button": {
+          "Upload": "Subir",
+          "Cancel": "Cancelar",
+          "Go Back": "Regresar"
+        }
+      },
+      "Protected Resourses": {
+        "Action Options": {
+          "Header Name": "Acción",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Confirmando eliminación",
+              "Delete Confirm Content": "Ha iniciado el proceso de eliminación de este recurso <0 /><0 />Haga clic en <1>Confirmar</1> para eliminarlo; de lo contrario, haga clic en <1>Cancelar</1>.",
+              "Success": "Recurso con el nombre `{{ rowName }}` Eliminado con éxito.",
+              "Error": "Error al eliminar el recurso con el nombre `{{ rowName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "El recurso con el nombre `{{ rowName }}` se guardó correctamente.",
+              "Error": "Error al guardar el recurso con el nombre `{{ rowName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Editar recurso",
+            "Delete": "Eliminar recurso"
+          }
+        }
+      },
+      "Resource List": {
+        "Action Options": {
+          "Header Name": "Acción",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Confirmando eliminación",
+              "Delete Confirm Content": "Ha iniciado el proceso de eliminación de esta lista de recursos. <0 /><0 />Haga clic en <1>Confirmar</1> para eliminar; de lo contrario, haga clic en <1>Cancelar</1>.",
+              "Success": "Lista de recursos con el nombre `{{ rowName }}` Eliminada con éxito.",
+              "Error": "Error al eliminar la lista de recursos con el nombre `{{ rowName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "La lista de recursos con el nombre `{{ rowName }}` se guardó correctamente.",
+              "Error": "Error al guardar la lista de recursos con el nombre `{{ rowName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Editar lista de recursos",
+            "Delete": "Eliminar lista de recursos"
+          }
+        }
+      },
+      "Unprotected Resources": {
+        "Fetch Status": {
+          "Error": {
+            "Title": "Ocurrió un error",
+            "Content": "<0> No se pueden recuperar o cargar más registros del servidor </0> <0> Información del error: </0>"
+          }
+        },
+        "Action Options": {
+          "Header Name": "Acción",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Confirmando eliminación",
+              "Delete Confirm Content": "Ha iniciado el proceso de eliminación de este recurso desprotegido. <0 /><0 />Haga clic en <1>Confirmar</1> para eliminar; de lo contrario, haga clic en <1>Cancelar</1>.",
+              "Success": "Recurso - nombre `{{ rowName }}` Eliminado con éxito.",
+              "Error": "Error al eliminar el recurso con el nombre `{{ rowName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "Recurso: el nombre `{{ rowName }}` se guardó correctamente.",
+              "Error": "Error al guardar el recurso con el nombre `{{ rowName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Editar recurso",
+            "Delete": "Eliminar recurso"
+          }
+        }
+      },
+      "Rules": {
+        "Fetch Status": {
+          "Error": {
+            "Title": "Ocurrió un error",
+            "Content": "<0> No se pueden recuperar o cargar más registros del servidor </0> <0> Información del error: </0>",
+            "Please Update": "Se canceló la operación de guardado. Actualice las entradas según sea necesario y vuelva a intentarlo."
+          }
+        },
+        "Action Options": {
+          "Header Name": "Acción",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Confirmando eliminación",
+              "Delete Confirm Content": "Ha iniciado el proceso de eliminación de esta regla <0 /><0 />Haga clic en <1>Confirmar</1> para eliminarla; de lo contrario, haga clic en <1>Cancelar</1>.",
+              "Success": "Regla con nombre `{{ rowName }}` y acción `{{ rowAction }}` Eliminada con éxito.",
+              "Error": "Error al eliminar la regla con el nombre `{{ rowName }}` y la acción `{{ rowAction }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            },
+            "Saved Status Prompt": {
+              "Success": "La regla con el nombre `{{ rowName }}` y la acción `{{ rowAction }}` se guardaron correctamente.",
+              "Error": "Error al guardar la regla con el nombre `{{ rowName }}` y la acción `{{ rowAction }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />",
+              "Can't Save": "No se puede guardar la regla con el nombre `{{ rowName }}` y la acción `{{ rowAction }}`. DEBE seleccionar al menos 1 grupo cuando haya seleccionado `No` para el campo `Todos los grupos de identidad`. <0 /> <0 /> Seleccione un grupo o establezca el campo `Todos los grupos de identidad` en `Sí` e inténtelo de nuevo."
+            },
+            "Edit Status Prompt": {
+              "To Continue": "Los grupos seleccionados se ignorarán ya que ha seleccionado `Sí` para el campo `Todos los grupos de identidad`.\n\nPara continuar, elija Aceptar en este modal o para crear una regla solo para los grupos seleccionados, elija cancelar y luego seleccione `No` para el campo `Todos los grupos de identidad`.",
+              "Save Option Cancel": "Se canceló la operación de guardado. Actualice las entradas según sea necesario y vuelva a intentarlo."
+            }
+          },
+          "Field Error": {
+            "At Least One": "Se debe seleccionar al menos un grupo, ya que el campo `Todos los grupos de identidad` está establecido en `No`. <0 /> Establézcalo en `Sí` para aplicar la regla a todos los grupos seleccionados o seleccione al menos un grupo.",
+            "Selected Groups": "Los grupos seleccionados se ignorarán ya que el campo `Todos los grupos de identidad` está establecido en `Sí`. <0 /> Establézcalo en `No` para aplicar la regla solo a los grupos seleccionados."
+          },
+          "Tool Tip": {
+            "Edit": "Editar regla",
+            "Delete": "Eliminar regla"
+          }
+        }
+      },
+      "Trust Level": {
+        "Text Heading Icons": "Nivel de confianza global",
+        "EditButton": "Editar",
+        "CancelButton": "Cancelar",
+        "ApplyButton": "Aplicar",
+        "Level0": "Nivel 0",
+        "Level1": "Nivel 1",
+        "Level2": "Nivel 2",
+        "Level3": "Nivel 3",
+        "Level4": "Nivel 4",
+        "Level5": "Nivel 5",
+        "Level6": "Nivel 6",
+        "Level7": "Nivel 7",
+        "ViewHelperText": "El nivel de confianza global del invisigate es actualmente \"Nivel {{selectedTrust }}\"",
+        "Disable": "El nivel de confianza global del invisigate ya es \"Nivel {{ selectedTrust }}\"",
+        "SaveEnable": "El nivel de confianza global del invisigate se cambiará a \"Nivel {{ newTrust }}\"",
+        "Saving": "Cambiando el nivel de confianza global del invisigate de \"Nivel {{ selectedTrust }}\" a \"Nivel {{ newTrust }}...\"",
+        "Saved": "El nivel de confianza global del invisigate cambió a \"Nivel {{ newTrust }}\" con éxito.",
+        "Error": "Error al cambiar el nivel de confianza global del invisigate  de \"Nivel {{ selectedTrust }}\" a \"Nivel {{ newTrust }}\". Inténtalo de nuevo.",
+        "Text Heading": "Grupos de nivel de confianza",
+        "Table": {
+          "EditTooltip": "Editar grupo de confianza"
+        },
+        "Fetch Status": {
+          "Error": {
+            "Title": "Ocurrió un error",
+            "Content": "<0> No se pueden recuperar o cargar más registros del servidor </0> <0> Información del error: </0>"
+          }
+        },
+        "Action Options": {
+          "Header Name": "Acción",
+          "Prompt": {
+            "Saved Status Prompt": {
+              "Success": "Nivel de confianza para el grupo `{{ rowName }}` guardado con éxito.",
+              "Error": "Error al guardar el nivel de confianza para el grupo `{{ rowName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            }
+          }
+        }
+      }
+    },
+    "configure": {
+      "dnsTacMode": {
+        "ipSummaryWidget": {
+          "title": "Resumen de IPv{{ version }}",
+          "tooltips": {
+            "hostname": "Nombre de host",
+            "fqdn": "FQDN",
+            "ipAddress": "IPv{{ version }} Dirección",
+            "ipPrefix": "IPv{{ version }} prefijo",
+            "defaultGateway": "Invisigate predeterminado"
+          },
+          "fallback": {
+            "notConfiguredText": "No configurada"
+          }
+        },
+        "tacModeWidget": {
+          "title": "Modo TAC",
+          "currentModeInfo": {
+            "0": "El invisigate es un servidor TAC y no se puede configurar.",
+            "1": "El invisigate se encuentra actualmente en el modo \"{{ mode }}\".",
+            "2": "El invisigate se cambiará al modo \"{{ mode }}\".",
+            "3": "Cambiando el modo del invisigate de \"{{ oldMode }}\" a \"{{ newMode }}\"...",
+            "4": "El modo del invisigate cambió a \"{{ mode }}\" correctamente."
+          },
+          "TacMode": {
+            "Bridge": "Puente",
+            "Monitor": "Monitor",
+            "Enforce": "Reforzar"
+          },
+          "prompt": {
+            "success": {},
+            "error": {
+              "switchError": {
+                "0": "Error al cambiar el modo TAC. Inténtalo de nuevo.",
+                "1": "Detalles:"
+              }
+            }
+          }
+        },
+        "dnsTable": {
+          "title": "Gestión de DNS",
+          "addButton": "Agregar DNS",
+          "table": {
+            "address": {
+              "columnName": "Dirección IP",
+              "inputPlaceholder": "Dirección IP",
+              "validation": {
+                "sameValue": "La dirección proporcionada es la misma que el valor actual de la dirección.",
+                "wrongIpv6": "Ingrese una dirección IPv6 válida. Por ejemplo, 2001:db8:3333:4444:5555:6666:7777:8888",
+                "duplicate": "La dirección proporcionada ya existe en la lista. Por favor ingrese uno diferente.",
+                "mandatory": "La dirección no puede estar en blanco.",
+                "wrongIPv4": "Ingrese una dirección IPv4 válida. Por ejemplo, \"10.0.0.10\""
+              }
+            },
+            "action": {
+              "columnName": "Acción",
+              "edit": "Editar",
+              "delete": "Eliminar",
+              "prompt": {
+                "confirmDelete": {
+                  "title": {
+                    "0": "Confirmando eliminación",
+                    "1": "¿Está seguro de que desea cambiar el DNS?"
+                  },
+                  "description": {
+                    "0": "Has iniciado el proceso de {{ text }} este DNS.",
+                    "1": "No se podrá acceder al invisigate por un momento hasta que los servicios se reinicien por completo.",
+                    "2": "Haga clic en \"{{ text }}\" para eliminar; de lo contrario, haga clic en \"Cancelar\".",
+                    "deletingText": "Borrando",
+                    "savingText": "Ahorro"
+                  }
+                },
+                "success": {},
+                "error": {
+                  "fetchError": {
+                    "0": "Error al obtener la lista de DNS. Inténtalo de nuevo.",
+                    "1": "Detalles:",
+                    "2": "Error al obtener la lista de DNS. Inténtalo de nuevo."
+                  }
+                },
+                "outageWarn": {
+                  "0": "No se podrá acceder al invisigate durante un tiempo; los servicios se reiniciarán por completo.",
+                  "1": "Haga clic en \"Guardar\" para cambiar, de lo contrario, haga clic en \"Cancelar\"."
+                }
+              }
+            }
+          }
+        },
+        "error": {
+          "fetchError": {
+            "0": "Error al obtener la información de la red. Vuelva a intentarlo.\n\nDetalles del error: "
+          }
+        }
+      },
+      "Layer3": {
+        "LabelText": "Capa3",
+        "SUCCESS": "ÉXITO",
+        "ERROR": "ERROR !!",
+        "Enabled Text": "Activado",
+        "Disabled Text": "Desactivado",
+        "Routes Text": "RUTAS",
+        "Nats Text": "NATS",
+        "Nats Management Text": "Administrar NAT",
+        "Routes Management Text": "Administrar Rutas",
+        "Fetch Status": {
+          "Error": {
+            "Title": "Ocurrió un error",
+            "Content": "<0> No se pueden recuperar o cargar más registros del servidor </0> <0> Información del error: </0>",
+            "Fetch Error Layer3": "Error al obtener información sobre el servicio Layer3. Inténtalo de nuevo. <0 /><0 /> Detalles del error:",
+            "Fetch Error Gateway": "Error al obtener información sobre el modo del invisigate. inténtelo de nuevo.<0 /><0 />Detalles del error:",
+            "Error Layer3 Service": "Error {{ layer }} el servicio Layer3. Inténtalo de nuevo. <0 /> <0 />Detalles del error:<0 />"
+          },
+          "Success": {
+            "Layer3 Service Successfully": "{{ toggleState }} con éxito el servicio Layer3"
+          }
+        },
+        "Action Options": {
+          "Header Name": "Acción",
+          "Prompt": {
+            "Saved Status Prompt": {
+              "Success": "",
+              "Error": " Error al guardar NAT con IP de confianza `{{ rowTrIp }}` e IP no confiable `{{ rowUtIp }}`. Inténtalo de nuevo. <0 /><0 /> Detalles:<0 />",
+              "Route Success": "Ruta con IP `{{ rowIp }}` agregada con éxito.",
+              "Route Error": "Error al guardar ruta con IP `{{ rowIp }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            },
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Confirmando eliminación",
+              "Delete Confirm Content": "Ha iniciado el proceso de eliminación de este NAT <0 /><0 />Haga clic en <1>Confirmar</1> para eliminarlo; de lo contrario, haga clic en <1>Cancelar</1>.",
+              "Delete Route Confirm": "Ha iniciado el proceso de eliminación de esta ruta.<0 /><0 />Haga clic en <1>Confirmar</1> para eliminarla; de lo contrario, haga clic en <1>Cancelar</1>.",
+              "Success": "",
+              "Error": "Error al eliminar NAT con la IP de confianza `{{ rowName }}` y la IP que no es de confianza `{{ rowAction }}`. Vuelva a intentarlo.<0 /><0 /> Detalles:<0 />",
+              "Success Route": "Ruta con IP `{{ rowIp }}` eliminada con éxito.",
+              "Error Route": "Error al eliminar ruta con IP `{{ rowIp }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit Nat": "Editar Nat",
+            "Delete Nat": "Eliminar Nat",
+            "Delete Route": "Eliminar Ruta"
+          }
+        }
+      },
+      "Applications": {
+        "Action Options": {
+          "Header Name": "Acción",
+          "Prompt": {
+            "Prompt": {
+              "Edit Prompt": {
+                "Success": "`{{ rowName }}` ports updated successfully.",
+                "Error": "Error saving application with name `{{ rowName }}`. Please try again. <0 /><0 />Details: <0 />"
+              }
+            },
+            "Saved Status Prompt": {
+              "Success": "La aplicación con el nombre `{{ rowName }}` se guardó correctamente.",
+              "Error": "Error al guardar la aplicación con el nombre `{{ rowName }}`. Inténtalo de nuevo. <0 /><0 />Detalles: <0 />"
+            },
+            "Delete Status Prompt": {
+              "Success": "La aplicación con el nombre `{{ rowName }}` se eliminó correctamente.",
+              "Error": "Error al eliminar la aplicación con el nombre `{{ rowName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />",
+              "Delete Confirm Title": "Confirmando eliminación",
+              "Delete Confirm Content": "Ha iniciado el proceso de eliminación de esta aplicación <0 /><0 />Haga clic en <1>Confirmar</1> para eliminarla; de lo contrario, haga clic en <1>Cancelar</1>."
+            }
+          },
+          "Tool Tip": {
+            "Edit": "",
+            "Delete": "Eliminar aplicación"
+          }
+        },
+        "Fetch Status": {
+          "Error": {
+            "Title": "Ocurrió un error",
+            "Content": "<0> No se pueden recuperar o cargar más registros del servidor </0> <0> Información del error: </0>"
+          }
+        }
+      },
+      "Configuration": {
+        "Banner": {
+          "Invisigate Name": "Nombre de Invisigate",
+          "Controller Name": "Nombre de Controlador",
+          "Current Firmware Version": "Versión actual de firmware",
+          "fqdn": "FQDN",
+          "More Button": "Ver más",
+          "Menu Buttons": {
+            "Backup": "Respaldo",
+            "Restore": "Restaurar"
+          }
+        },
+        "BackUp Configuration Modal": {
+          "Title": "Configuración de respaldo",
+          "FileName": "Nombre del archivo",
+          "File Name Helper Text1": "El nombre del archivo es un campo obligatorio",
+          "File Name Helper Text2": "El nombre de archivo solo acepta caracteres '-', '_', 'alfanuméricos'",
+          "PassPhrase": "Frase de contraseña",
+          "PassPhrase Helper Text1": "La frase de contraseña es un campo obligatorio.",
+          "PassPhrase Helper Text2": "La frase de contraseña debe tener al menos 4 caracteres de longitud",
+          "Confirm PassPhrase": "Confirmar frase de contraseña",
+          "Confirm Phrase Helper Text": "Confirmar frase de contraseña es un campo obligatorio.",
+          "Confirm Phrase Not Same": "Confirmar frase de contraseña no es la misma que la frase de contraseña.",
+          "Check Box Label": "Copia de respaldo como configuración de rescate",
+          "Tooltip": "Establecer configuración como configuración de copia de respaldo",
+          "Comment": "Comentario",
+          "Comment Helper Text": "El campo de comentario permitirá 63 caracteres o menos.",
+          "Cancel Button": "Cancelar",
+          "Backup Button": "Respaldar",
+          "Confirmation Modal": {
+            "Title": "Configuración de respaldo",
+            "Content": "Está seguro de que desea hacer una copia de respaldo de esta configuración?",
+            "cancel": "Cancelar",
+            "Confrim": "Confirmar"
+          },
+          "successAlert": {
+            "Content": "{{ type }} configuration \"{{ fileName }}\" copia de seguridad guardada exitosamente."
+          }
+        },
+        "Restore Configuration Moal": {
+          "Title": "Restaurar configuración",
+          "Saved Checkbox": "Ultimas configuraciones guardadas",
+          "Last Saved Configurations": {
+            "Title": "Configuraciones guardadas",
+            "PassPhrase": "Frase de contraseña",
+            "PassPhrase Helper Text1": "La frase de contraseña es un campo obligatorio.",
+            "PassPhrase Helper Text2": "La frase de contraseña debe tener al menos 4 caracteres de longitud",
+            "Comment": "Comentario",
+            "Comment Placeholder": "Ingrese comentarios para futuras referencias",
+            "Comment Helper Text": "El campo de comentario permitirá 63 caracteres o menos.",
+            "Cancel Button": "Cancelar",
+            "Apply Button": "Aplicar"
+          },
+          "Configuration Name": "Nombre de configuración:",
+          "Configuration Imported": "Configuración importada con éxito",
+          "Tar": "El archivo seleccionado tiene una extensión incorrecta.  Seleccione una tar ball válida.",
+          "Size": "El archivo seleccionado es demasiado grande. Tamaño de archivo máximo permitido: 60 MB",
+          "Type": "El archivo seleccionado tiene un tipo MIME incorrecto. Seleccione un tar ball válida.",
+          "Close": "Cerrar",
+          "Rescue Checkbox": "Configuración de rescate",
+          "Rescue Configuration": {
+            "Title": "Restauración de la configuración de rescate",
+            "Comment": "Comentario",
+            "Comment Placeholder": "Ingrese comentarios para futuras referencias",
+            "Comment Helper Text": "El campo de comentario permitirá 63 caracteres o menos.",
+            "Cancel Button": "Cancelar",
+            "Apply Button": "Aplicar"
+          },
+          "Import Checkbox": "Importar una configuración y restaurar",
+          "Import Configuration": {
+            "Line1": "Seleccione la configuración para cargar",
+            "Line2": "(.tgz o tar bal)",
+            "Line3": "Tamaño máximo: 60 MB",
+            "Line4": "O",
+            "Select Button": "Seleccionar Archivo",
+            "File Name": "Nombre del archivo",
+            "File Name Helper Text1": "El nombre del archivo es un campo obligatorio",
+            "File Name Helper Text2": "El nombre de archivo solo acepta caracteres '-', '_', 'alfanuméricos'",
+            "PassPhrase": "Frase de contraseña",
+            "PassPhrase Helper Text1": "La frase de contraseña es un campo obligatorio.",
+            "PassPhrase Helper Text2": "La frase de contraseña debe tener al menos 4 caracteres de longitud",
+            "Comment": "Comentario",
+            "Comment Helper Text": "El campo de comentario permitirá 63 caracteres o menos.",
+            "Cancel Button": "Cancelar",
+            "Apply Button": "Importar & Restaurar"
+          },
+          "Action Options": {
+            "Header Name": "Acción",
+            "Prompt": {
+              "Restore Configure Prompt": {
+                "Restore Configure Title": "Restaurar configuración desde los últimos archivos guardados",
+                "Restore Rescue Title": "Restaurar desde la configuración de rescate",
+                "Import Configure Title": "Importar configuración y restaurar",
+                "List": {
+                  "0": "Restaurar esta configuración hará que {{ modal }} se reinicie. <0 /><0 /> ¿Está seguro de que desea restaurar esta configuración?<0 />",
+                  "1": "NOTA: <0><1 /></0>Se cerrará la sesión del usuario y se reiniciará {{ gateWay }}."
+                }
+              }
+            }
+          }
+        },
+        "Table Title": "Ver configuración",
+        "BulkAction": {
+          "Delete": "Eliminar configuraciones",
+          "Export": "Exportar configuraciones"
+        },
+        "TableActionTooltip": {
+          "Export": "Exportar configuración",
+          "Restore": "Restaurar configuración",
+          "Delete": "Eliminar configuración"
+        },
+        "TableActionAlert": {
+          "Export": {
+            "Content": "Ha iniciado el proceso de restauración de esta configuración.<0 /><0 />Haga clic en <1>Confirmar</1> para restaurar; de lo contrario, haga clic en la acción <1>Cancelar</1>.",
+            "Content2": "NOTA:",
+            "Content3": "Se cerrará la sesión del usuario y se reiniciará el {{ Invisigate }}."
+          }
+        },
+        "Action Options": {
+          "Header Name": "Acción",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Success": "La configuración de el invisigate `{{ fileName }}` se eliminó correctamente.",
+              "Error": "Error al eliminar la configuración del invisigate `{{ fileName }}`. Inténtalo de nuevo. <0 /> <0 /> Detalles:<0 />",
+              "Delete Confirm Title": "Confirmando eliminación",
+              "Delete Confirm Content": "Has iniciado el proceso de eliminación de esta configuración<0 /><0 />Haz clic en <1>Confirmar</1> para eliminarla; de lo contrario, haz clic en <1>Cancelar</1>."
+            },
+            "Export Status Prompt": {
+              "Success": "La configuración de {{ gateWay }} <0>`{{ fileName }}`</0> se exportó correctamente. La descarga se completará en breve.",
+              "Error": "Error al exportar la configuración de {{ gateWay }} `{{ fileName }}`. Vuelva a intentarlo.<0/><0/>Detalles:<0/>"
+            },
+            "Restored Status Prompt": {
+              "Success": {
+                "0": "La configuración de {{ gateWay }} `{{ fileName }}` se restauró correctamente.",
+                "1": "Se cerrará la sesión del usuario y {{ gateWay }} se reiniciará."
+              },
+              "Error": "Error al restaurar la configuración de {{ gateWay }} {{ fileName }}. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            },
+            "Restoring Status Prompt": {
+              "Error": "Error al restaurar la configuración de {{ gateWay }} `{{ fileName }}`. Por favor, inténtalo de nuevo.<0/><0/>Detalles:<0/> "
+            }
+          }
+        },
+        "Fetch Status": {
+          "Error": {
+            "Title": "Ocurrió un error",
+            "Content": "<0> No se pueden recuperar o cargar más registros del servidor </0> <0> Información del error: </0>"
+          }
+        }
+      },
+      "ConfiguratioLogs": {
+        "TableTitle": "Archivos de configuración"
+      }
+    },
+    "gatewayServer": {
+      "services": {
+        "context": {
+          "text": "Contexto",
+          "toggle": {
+            "prompt": {
+              "success": {
+                "title": "Éxito",
+                "message": ""
+              },
+              "error": {
+                "title": "Error",
+                "message": "Error al cambiar de contexto"
+              }
+            }
+          },
+          "distributedIdentities": {
+            "text": "Identidades Distribuidas",
+            "tooltip": "Configurar identidades distribuidas para alternar",
+            "fields": {
+              "timeout": {
+                "label": "Tiempo de espera (segundos)"
+              },
+              "algorithm": {
+                "label": "Algoritmo"
+              },
+              "tcpTagging": {
+                "label": "Etiquetado TCP"
+              },
+              "groups": {
+                "label": "Grupos(separado por comas)"
+              }
+            },
+            "validation": {
+              "algorithm": "Seleccione el valor para el algoritmo",
+              "groups": {
+                "0": "Complete el campo para Grupos (separados por comas)",
+                "1": "El campo de grupos (separados por comas) aceptará solo números o letras",
+                "2": "Se permite un máximo de 40 grupos."
+              },
+              "tcp": "Seleccione el valor para etiquetado TCP",
+              "timeout": {
+                "0": "Complete el campo para Tiempo de espera (segundos)",
+                "1": "El campo de tiempo de espera solo acepta <1>numérico</1> no <1>{{ value }}</1>",
+                "2": "El tiempo de espera debe oscilar entre <1>3600</1> y <1>65534</1> (segundos)."
+              }
+            },
+            "prompt": {
+              "alert": {
+                "title": "Alerta",
+                "info": "Realice algunos cambios en las preferencias para actualizar."
+              },
+              "success": {
+                "title": "Éxito",
+                "info": "Servicio de identidades distribuidas configurado correctamente.",
+                "info1": "Identidades distribuidas configuradas correctamente."
+              },
+              "error": {
+                "save": {
+                  "0": "Error al guardar las Identidades Distribuidas. Inténtalo de nuevo.",
+                  "1": "Error de detalles: ",
+                  "info": "Error en Actualización de Identidades Distribuidas. Inténtalo de nuevo."
+                }
+              }
+            },
+            "toggle": {
+              "success": {
+                "title": "Éxito",
+                "message": "Alteró con éxito las identidades distribuidas."
+              },
+              "error": {
+                "title": "Error",
+                "message": {
+                  "0": "Error {{ text }} las identidades distribuidas. Inténtalo de nuevo.",
+                  "1": "Error de detalles: "
+                }
+              }
+            }
+          },
+          "remoteSysLog": {
+            "text": "Registro de sistema remoto",
+            "table": {
+              "columns": {
+                "name": {
+                  "text": "Nombre",
+                  "validation": {
+                    "0": "El nombre es un campo obligatorio.",
+                    "1": "Sólo caracteres alfanuméricos y guion bajo son permitidos."
+                  }
+                },
+                "facility": {
+                  "text": "Instalación",
+                  "validation": {
+                    "0": ""
+                  }
+                },
+                "priority": {
+                  "text": "Prioridad",
+                  "validation": {
+                    "0": "La prioridad es un campo obligatorio."
+                  }
+                },
+                "server": {
+                  "text": "Servidor IP",
+                  "validation": {
+                    "0": "La dirección IP del servidor es un campo obligatorio.",
+                    "1": "La dirección IP proporcionada es incorrecta."
+                  }
+                },
+                "port": {
+                  "text": "Puerto",
+                  "validation": {
+                    "0": "Puerto es un campo obligatorio.",
+                    "1": "El valor del puerto debe ser un número válido.",
+                    "2": "El campo del puerto debe estar en el rango de 1 - 65535."
+                  }
+                },
+                "action": {
+                  "text": "Acción",
+                  "actions": {
+                    "delete": {
+                      "name": "Eliminar registro del sistema remoto",
+                      "confirmationText": {
+                        "0": "Confirmando eliminación",
+                        "1": "Ha iniciado el proceso de eliminación de este registro.",
+                        "2": "Haga clic en <1>Confirmar</1> para eliminar; de lo contrario, haga clic en <1>Cancelar</1>."
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "action": {
+              "success": {
+                "0": "El registro del sistema remoto con el nombre \"{{ name }}\" guardado correctamente.",
+                "1": "El registro del sistema remoto con el nombre \"{{ name }}\" se eliminó correctamente."
+              },
+              "error": {
+                "fetch": {
+                  "0": "Error en la configuración de el registro del sistema remoto. Inténtalo de nuevo.",
+                  "1": "Error de detalles: "
+                },
+                "save": {
+                  "0": "Error al guardar el registro del sistema remoto con el nombre \"{{ name }}\". Inténtalo de nuevo.",
+                  "1": "Detalles: "
+                },
+                "delete": {
+                  "0": "Error al eliminar registro del sistema remoto con el nombre \"{{ name }}\". Vuelva a intentarlo.",
+                  "1": "Detalles: "
+                }
+              }
+            },
+            "dropdown": {
+              "enabledText": "Activado",
+              "disabledText": "Desactivado",
+              "syslogFormat": {
+                "text": "Formato de sistema remoto"
+              },
+              "syslogDebugMode": {
+                "text": "Modo de depuración de Syslog"
+              },
+              "save": {
+                "warn": {
+                  "title": "Alerta",
+                  "info": "Realice algunos cambios en el registro para actualizarlo."
+                },
+                "success": {
+                  "title": "Éxito",
+                  "info": "La configuración de el sistema remoto se actualizó correctamente."
+                },
+                "error": {
+                  "title": "Error",
+                  "info": {
+                    "0": "Error en la configuración de sistema remoto. Inténtalo de nuevo.",
+                    "1": "Error de detalles: "
+                  }
+                }
+              }
+            }
+          },
+          "pubSub": {
+            "text": "Pub/Sub",
+            "tooltip": "Configurar PubSub para alternar el servicio",
+            "label": "Publisher IP",
+            "stoppedText": "Detenido",
+            "runningText": "Corriendo",
+            "radio": {
+              "label1": "Publisher: ",
+              "label2": "Subscriber: "
+            },
+            "validation": {
+              "0": "Complete el campo de IP del publicador para utilizar el suscriptor.",
+              "1": "La dirección IP proporcionada es incorrecta."
+            },
+            "prompt": {
+              "alert": {
+                "title": "Alerta",
+                "info": "Realice algunos cambios en el registro para actualizar"
+              },
+              "error": {
+                "title": "Error",
+                "save": {
+                  "0": "Error al guardar pub/sub. Inténtalo de nuevo.",
+                  "1": "Error de detalles: "
+                }
+              },
+              "success": {
+                "title": "Éxito",
+                "text": "Completada con éxito."
+              }
+            },
+            "toggle": {
+              "prompt": {
+                "success": "Ha cambiado con éxito el interruptor pub/sub.",
+                "error": {
+                  "0": "Error {{ state }} el interruptor pub/sub. Inténtalo de nuevo.",
+                  "1": "Error de detalles: "
+                },
+                "error1": {
+                  "0": "Error en Pub/Sub. Inténtalo de nuevo.",
+                  "1": "Error de detalles: "
+                }
+              }
+            }
+          },
+          "remoteKeyAgent": {
+            "text": "Remote Key Agent",
+            "tooltip": "Configurar Remote Key Agent para alternar",
+            "popup": {
+              "title": "Configurar Remote Key Agent"
+            },
+            "field": {
+              "label": "Direccion",
+              "description": "¿Cuál es la dirección IP para el servicio de manipulación remota...?",
+              "validation": {
+                "0": "el campo remote key es obligatorio",
+                "1": "La dirección IP proporcionada es incorrecta",
+                "2": "El dominio proporcionado es incorrecto",
+                "3": "No se permite el prefijo"
+              }
+            },
+            "prompt": {
+              "alert": {
+                "title": "Alerta",
+                "message": "Realice algunos cambios en el registro para actualizarlo."
+              },
+              "success": {
+                "title": "Éxito",
+                "message": "El servicio de clave remota se configuró correctamente."
+              },
+              "error": {
+                "title": "Error",
+                "message": {
+                  "0": "Error en clave remota. Inténtalo de nuevo.",
+                  "1": "Error de detalles: ",
+                  "2": "Error in Update of remote key service. Please try again."
+                }
+              }
+            },
+            "toggle": {
+              "prompt": {
+                "success": {
+                  "title": "Éxito",
+                  "message": "Ha cambiado con éxito la tecla remota."
+                },
+                "error": {
+                  "title": "Error",
+                  "message": {
+                    "0": "Error {{ text }} la clave remota. Inténtalo de nuevo.",
+                    "1": "Error de detalles: "
+                  }
+                }
+              }
+            }
+          },
+          "networkTimeProtocol": {
+            "text": "Network Time Protocol",
+            "tooltip": "",
+            "table": {
+              "title": "NTP servidores",
+              "columns": {
+                "serverHostnameOrIP": {
+                  "text": "Nombre de host/IP del servidor"
+                },
+                "status": {
+                  "text": "Estado"
+                }
+              }
+            },
+            "toggle": {
+              "prompt": {
+                "success": {
+                  "title": "Éxito",
+                  "message": "Ha cambiado con éxito el conmutador NTP."
+                },
+                "error": {
+                  "title": "Error",
+                  "message": {
+                    "0": "Error {{ text }} el conmutador NTP. Inténtalo de nuevo.",
+                    "1": "Error de detalles: "
+                  }
+                }
+              }
+            }
+          },
+          "secureShellDaemon": {
+            "text": "Secure Shell Daemon",
+            "tooltip": "",
+            "prompt": {
+              "success": {
+                "title": "Éxito",
+                "message": "Ha cambiado con éxito el interruptor del demonio de shell seguro."
+              },
+              "error": {
+                "title": "Error",
+                "message": {
+                  "0": "Error {{ state }} el interruptor del demonio de shell seguro. Inténtalo de nuevo.",
+                  "1": "Error de detalles: "
+                }
+              }
+            }
+          },
+          "restApi": {
+            "text": "RestAPI",
+            "tooltip": "",
+            "toggle": {
+              "prompt": {
+                "success": {
+                  "title": "Éxito",
+                  "message": "Ha cambiado con éxito el interruptor Rest-Api."
+                },
+                "error": {
+                  "title": "Error",
+                  "message": {
+                    "0": "Error {{ text }} el interruptor Rest-Api. Inténtalo de nuevo.",
+                    "1": "Error de detalles: "
+                  }
+                }
+              }
+            }
+          }
+        },
+        "trustedInterface": {
+          "title": "Gestión confiable",
+          "text": "Interfaz confiable",
+          "tooltip": "Desactive la interfaz para poder configurarla.",
+          "configureTooltip": "Configure la interfaz de confianza para alternar",
+          "prompt": {
+            "success": {
+              "title": "Éxito",
+              "message": ""
+            },
+            "error": {
+              "title": "Error",
+              "message": {
+                "0": "Error {{ text }} la interfaz de confianza. Inténtalo de nuevo.",
+                "1": "Error de detalles: "
+              }
+            }
+          },
+          "form": {
+            "ipv4p": {
+              "label": "Dirección IP/Prefijo (IPv4)"
+            },
+            "ipv4": {
+              "label": "Puerta de enlace (IPv4)"
+            },
+            "ipv6p": {
+              "label": "Dirección IP/Prefijo (IPv6)"
+            },
+            "ipv6": {
+              "label": "Puerta de enlace (IPv6)"
+            },
+            "vLanId": {
+              "label": "ID de vLan"
+            },
+            "validation": {
+              "eitherOrMandatory": "Ya sea IPv4/prefijo o IPv6/prefijo es un campo obligatorio",
+              "invalid": "La dirección IP proporcionada es incorrecta.",
+              "invalidV4": "El campo Puerta de enlace (IPv4) debe ser una dirección IPv4 válida.",
+              "invalidV6": "El campo Puerta de enlace (IPv6) debe ser una dirección IPv6 válida.",
+              "invalidWithHelpers": {
+                "0": "Valor de prefijo IPv4 no válido.",
+                "1": "El prefijo debe ser un número entero del 8 al 31."
+              },
+              "invalidWithHelpers6": {
+                "0": "Valor de prefijo IPv6 no válido.",
+                "1": "El prefijo debe ser un número entero de 48 a 127."
+              }
+            },
+            "prompt": {
+              "alert": {
+                "title": "Alerta",
+                "message": "Realice algunos cambios en el registro para actualizar"
+              },
+              "success": {
+                "title": "Éxito",
+                "message": "Interfaz de confianza configurada correctamente."
+              },
+              "error": {
+                "title": "Error",
+                "message": {
+                  "0": "Error al guardar Gestión de confianza. Inténtalo de nuevo.",
+                  "1": "Error de detalles: "
+                }
+              }
+            }
+          }
+        },
+        "untrustedInterface": {
+          "title": "Gestión no confiable",
+          "text": "Interfaz no confiable",
+          "tooltip": "Desactive la interfaz que no es de confianza para poder configurarla.",
+          "configureTooltip": "Configure la interfaz no confiable para alternar.",
+          "prompt": {
+            "success": {
+              "title": "Éxito",
+              "message": ""
+            },
+            "error": {
+              "title": "Error",
+              "message": {
+                "0": "Error {{ text }} la interfaz no confiable. Inténtalo de nuevo.",
+                "1": "Error de detalles: "
+              }
+            }
+          },
+          "form": {
+            "ipv4p": {
+              "label": "Dirección IP/Prefijo (IPv4)"
+            },
+            "ipv4": {
+              "label": "Puerta de enlace (IPv4)"
+            },
+            "ipv6p": {
+              "label": "Dirección IP/Prefijo (IPv6)"
+            },
+            "ipv6": {
+              "label": "Puerta de enlace (IPv6)"
+            },
+            "vLanId": {
+              "label": "ID de vLan"
+            },
+            "validation": {
+              "eitherOrMandatory": "Ya sea IPv4/prefijo o IPv6/prefijo es un campo obligatorio",
+              "invalid": "La dirección IP proporcionada es incorrecta.",
+              "invalidV4": "El campo Puerta de enlace (IPv4) debe ser una dirección IPv4 válida.",
+              "invalidV6": "El campo Puerta de enlace (IPv6) debe ser una dirección IPv6 válida.",
+              "invalidWithHelpers": {
+                "0": "Valor de prefijo IPv4 no válido.",
+                "1": "El prefijo debe ser un número entero del 8 al 31."
+              },
+              "invalidWithHelpers6": {
+                "0": "Valor de prefijo IPv6 no válido.",
+                "1": "El prefijo debe ser un número entero de 48 a 127."
+              }
+            },
+            "prompt": {
+              "alert": {
+                "title": "Alerta",
+                "message": "Realice algunos cambios en el registro para actualizar"
+              },
+              "success": {
+                "title": "Éxito",
+                "message": "Interfaz no confiable configurada con éxito."
+              },
+              "error": {
+                "title": "Error",
+                "message": {
+                  "0": "Error al guardar Gestión no confiable. Inténtalo de nuevo.",
+                  "1": "Error de detalles: "
+                }
+              }
+            }
+          }
+        },
+        "prompt": {
+          "title": "Está seguro..?",
+          "message": "No se podrá acceder al invisigate por un momento hasta que los servicios se reinicien por completo."
+        }
+      },
+      "Filter Rules": {
+        "BulkAction": {
+          "Enable": "Habilitar reglas seleccionadas",
+          "Disable": "Deshabilitar reglas seleccionadas"
+        },
+        "TableActionTooltip": {
+          "Edit": "Editar regla",
+          "Delete": "Eliminar regla"
+        },
+        "Modal": {
+          "Modal Title": "TÍTULO MODAL",
+          "Modal Message": "MENSAJE MODAL",
+          "Okay Text": "Okay",
+          "Nope Text": "No",
+          "Close Text": "Cerrar",
+          "Task Results Text": "Resultados de la tarea",
+          "Follow Perform Task": "Los siguientes son los elementos procesados ​​al realizar la tarea."
+        },
+        "Select Option": {
+          "Choose a Context Field": {
+            "Title": "Elija un contexto"
+          },
+          "From/To Trusted Field": {
+            "Title": "De/A Confiable"
+          },
+          "Fetch Status": {
+            "Error": {
+              "Title": "Ocurrió un error",
+              "Content": "<0>No se pueden recuperar o cargar más registros del servidor</0><0>Información de error:</0>"
+            }
+          },
+          "Action Options": {
+            "Header Name": "Acción",
+            "Prompt": {
+              "Saved Status Prompt": {
+                "Success": "La regla de filtro con el número `{{ ruleNum }}` agregada con éxito.",
+                "Error": "Error al agregar la regla de filtro con el número `{{ ruleNum }}`. Inténtalo de nuevo. <br /><br />Detalles:<br />"
+              },
+              "Delete Status Prompt": {
+                "Success": "La regla de filtro con el nombre `{{ ruleNum }}` eliminada correctamente.",
+                "Error": "Error al eliminar la regla de filtro con el nombre `{{ ruleNum }}`.<br /> <br />Detalles:<br />",
+                "Failed To Delete": "No se pudo eliminar la regla de filtro con el número `{row.ruleNum}`. No se puede guardar una regla de filtro sin eliminarla primero. Vuelva a intentarlo.<br /><br />Detalles del error:<br />"
+              },
+              "Edit Status Prompt": {
+                "Ip Not Same": "<p>La IP de origen y la IP de destino no pueden ser iguales.<br />¡Por favor, ingrese una dirección IP diferente!</p>"
+              },
+              "Disable & Enable Rule": {
+                "Success": "La regla de filtro con el número `{{ ruleNum }}` {{ type }} con éxito.",
+                "Error": "Error {{ statusType }} regla de filtro con el número `{{ ruleNum }}`. Vuelva a intentarlo.<br /><br />Detalles:<br />"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Endpoint": {
+      "Configure": {
+        "TableActionTooltip": {
+          "Edit": "Editar invisipoint",
+          "Delete": "Eliminar invisipoint"
+        },
+        "ellipsisMenu": {
+          "requestLogFile": "Solicitar Archivo De Registro",
+          "tooltipLogFile": "Envie una solicitud para generar un archivo de registro para este invisipoint",
+          "downloadLogs": "Descargar Registros",
+          "tooltipDownloadLogs": "Descargar registros generados para este invisipoint",
+          "viewFilterRules": "Ver Reglas de Filtro",
+          "tooltipViewFilterRules": "Ver reglas de filtro configuradas para este invisipoint",
+          "configureFilterRles": "Configurar Reglas De Filtro",
+          "tooltipConfigureFilterRles": "Configurar reglas de filtro para este invisipoint",
+          "upgradeRemoteFirmware": "Actualizar Firmware Remoto",
+          "tooltipUpgradeRemote": "Actualice el firmware remoto para este invisipoint",
+          "clearFilterRules": "Borrar Reglas De Filtro",
+          "tooltipClearFilterRules": "Borrar reglas de filtro para este invisipoint"
+        },
+        "requestLogFileModal": {
+          "loadingFetching": "Obteniendo estado de tarea...",
+          "loadingValidating": "Validando invisipoint...",
+          "title": "Solicitar archivo de registro",
+          "date": "Fecha",
+          "start": "Comienzo",
+          "end": "Fin",
+          "message": "Los valores de tiempo anteriores están en UTC.",
+          "errorText": "Error",
+          "submitButton": "Enviar",
+          "cancelButton": "Cancelar",
+          "inTaskMessage1": "El invisipoint seleccionado ya tiene una solicitud de Obtener registro.",
+          "inTaskMessage2": "Por favor espere a que se complete antes de intentar solicitar registros para este invisipoint nuevamente.",
+          "requestLogAlert": {
+            "title": "Información",
+            "message": "Su solicitud ha sido enviada. Los registros estarán disponibles para su descarga en breve."
+          },
+          "invalidStart": "Hora de inicio no válida",
+          "timeRange": "La hora de finalización debe ser mayor que {{ startTimeState }}",
+          "invalidEnd": "Hora de finalización no válida",
+          "endGreater": "La hora de finalización debe ser mayor que la hora de inicio ",
+          "endCurrent": "La hora de finalización no debe ser mayor que la hora actual.",
+          "taskInProgress": "Una tarea ya está en curso.",
+          "requestDownload": {
+            "message1": "Todos los {{ epCheckState }} solicitados para descargar registros.",
+            "message2": "Espere a que se completen antes de intentar solicitar de nuevo los registros de descarga para esos invisipoints."
+          },
+          "Action Options": {
+            "Prompt": {
+              "Download Status Prompt": {
+                "Error": " Error al descargar registros. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />",
+                "Download Failed": "La solicitud para descargar los registros falló.<0 /><0 />Detalles del error:<0 />"
+              }
+            }
+          }
+        },
+        "downloadLogsModal": {
+          "loadingText": "Cargando...",
+          "title": "Descargar registros",
+          "endpointName": "Nombre del invisipoint:",
+          "endpointSerial": "Número de serie del invisipoint:",
+          "logStart": "Fecha de inicio del registro",
+          "logEnd": "Fecha de finalización del registro",
+          "logDelete": "Fecha de eliminación del registro",
+          "action": "Acción",
+          "confirm": "Confirmar",
+          "cancel": "Cancelar",
+          "tooltipDownload": "Descargar Registro",
+          "tooltipDelete": "Eliminar Registro",
+          "emptyMessag": "No hay registros disponibles...",
+          "utc": "Los valores de tiempo están en UTC.",
+          "downloadLogsAlert": {
+            "title": "Error!",
+            "message": "Error al descargar los registros. Por favor, inténtelo de nuevo más tarde.",
+            "errorDetails": "Detalles del error:",
+            "invalidResponse": "Respuesta no válida recibida.",
+            "errorFetch": "No se pudieron obtener los registros. Inténtalo de nuevo."
+          },
+          "deleteConfirmation": {
+            "deleteConfirmText": "Confirmando eliminación",
+            "message1": "Ha iniciado el proceso de eliminación de este archivo de registro.<0 /><0 />Haga clic en <1>Confirmar</1> para eliminarlo; de lo contrario, haga clic en <1>Cancelar</1>."
+          },
+          "records": "No hay registros",
+          "Action Options": {
+            "Alert": {
+              "Error Text": "ERROR",
+              "Task Completed Text": "Tarea terminada"
+            },
+            "Prompt": {
+              "Deleting File Status": {
+                "Success": "Eliminado con éxito {{ fileName }}",
+                "Error": "error al eliminar archivo"
+              }
+            }
+          }
+        },
+        "viewFilterRulesModal": {
+          "loadingError": "Algo salió mal!",
+          "apiFilterRules": "API de reglas De Filtro",
+          "titleCurrent": "Reglas de filtro actuales",
+          "titleStaged": "Reglas de filtro en proceso",
+          "noRecords": "No hay reglas de filtrado configuradas.",
+          "errorFetch": "No se pudieron obtener las reglas de filtrado. Inténtalo de nuevo.",
+          "errorTemplate": "No se pudieron obtener las plantillas de reglas de filtrado. Inténtalo de nuevo.",
+          "errorStaged": "No se pudieron obtener las tareas de la regla de filtro en proceso. Inténtalo de nuevo.",
+          "templateStaged": "No se pudieron obtener las plantillas de reglas de filtro en proceso. Inténtalo de nuevo",
+          "stagesTask": "No se pudieron obtener las tareas de la regla de filtro en proceso. Inténtalo de nuevo.",
+          "stagedFilterRules": "No se pudieron recuperar las reglas de filtrado en proceso. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />",
+          "details": "Detalles del error:",
+          "templateName": "Nombre de la plantilla",
+          "ruleNumber": "Número de Regla",
+          "description": "Descripción",
+          "sourceIp": "IP de origen",
+          "sourcePort": "Puerto de origen",
+          "destinationIp": "IP de destino",
+          "destinationPort": "Puerto de destino",
+          "protocol": "Protocolo",
+          "action": "Acción",
+          "trustedUntrusted": "Confiable / No confiable",
+          "status": "Estado de configuración de las reglas de filtro en el invisipoint:",
+          "emptyMesagge": "No hay reglas de filtro en proceso."
+        },
+        "configureFilterRulesModal": {
+          "title": "Configurar reglas de filtro",
+          "loading": "Obteniendo el estado de la tarea...",
+          "validating": "Validando invisipoints...",
+          "defaultRule": "Regla predeterminada",
+          "rules": "REGLAS",
+          "somethingWentWrong": "¡Algo salió mal!",
+          "adAuthServer": "Autenticación AD - Servidor",
+          "adAuthClient": "Autenticación AD - Cliente",
+          "networkManagement": "Administración de redes",
+          "taskMessage1": "El invisipoint seleccionado ya tiene una tarea de actualización de políticas.",
+          "taskMessage2": "Espere a que se complete antes de intentar configurar/borrar la(s) regla(s) de filtro para este invisipoint nuevamente.",
+          "taskRequired": "Seleccione al menos una plantilla (que no sea la plantilla predeterminada) para guardar y vuelva a intentarlo. Para aplicar solo las reglas de filtrado predeterminadas, utilice reglas de filtrado claras.",
+          "ruleNumber": "Número de Regla",
+          "description": "Descripción",
+          "sourceIp": "IP de origen",
+          "sourcePort": "Puerto de origen",
+          "destinationIp": "IP de destino",
+          "destinationPort": "Puerto de destino",
+          "protocol": "Protocolo",
+          "action": "Acción",
+          "trustedUntrusted": "Confiable / No confiable",
+          "resetButton": "Reiniciar",
+          "cancelButton": "Cancelar",
+          "savingButton": "Guardando...",
+          "saveButton": "Guardar",
+          "link": "Enlazar",
+          "unlink": "Desenlazar",
+          "message1": "entradas con etiqueta:",
+          "lmessage": "Una vez enlazado, actualizar una entrada actualizará otras entradas con la misma etiqueta.",
+          "lmessage2": "<0>P.D.:</0> Tenga en cuenta que si las entradas tienen valores diferentes en el momento de la vinculación, el valor de la entrada en cuyo botón de enlace se haga clic se aplicará a todas.",
+          "uMessage": "Una vez desenlazado, la actualización de una entrada no actualizará otras entradas con la misma etiqueta",
+          "alert": {
+            "titleSuccess": "Información",
+            "titleError": "Error"
+          },
+          "successSaving": "Reglas de filtrado configuradas correctamente. La tarea de configuración se ha puesto en cola y se completará en breve.",
+          "errorSaving": "Error al configurar las reglas de filtro. Inténtalo de nuevo.",
+          "details": "Detalles del error:",
+          "invalidsourceIp": "El puerto de origen no es válido.",
+          "blankSourceIp": "La IP de origen no puede estar vacía.",
+          "validationText": "La IP de origen es incorrecta.",
+          "validationTooltip": "La IP de origen debe ser como las siguientes:",
+          "sameMessage": "<0>La IP de origen y la IP de destino no pueden ser iguales.<1 />Por favor, introduzca una dirección IP diferente!</0>",
+          "invalidDestinationIp": "La IP de destino no es válida.",
+          "blankDestinationIp": "La IP de destino no puede estar vacía.",
+          "validationDestination": "La IP de destino es incorrecta.",
+          "validationDestinationTooltip": "La IP de destino debe ser como las siguientes:",
+          "resetCurrentValue": "La siguiente acción borrará los valores actuales y restablecerá los valores de la plantilla.<0 /><0 /> Haga clic en <1>Confirmar</1> para restablecer; de lo contrario, haga clic en <1>Cancelar</1>.",
+          "blankSourcePort": "El puerto de origen no puede estar vacío.",
+          "sourcePortInvalid": "El puerto de origen no es válido.",
+          "rangeSourcePort": "El puerto de origen debe estar en el rango de <b>0 - 65535</b>.",
+          "blankDestinationPort": "El puerto de destino no puede estar vacío.",
+          "destinationPortInvalid": "El puerto de destino no es válido.",
+          "rangeDestinationPort": "El puerto de destino debe estar en el rango de <0>0 - 65535</0>.",
+          "invalidRules": {
+            "line1": "entrada inválida",
+            "line2": "encontrada. Por favor, corrija el valor.",
+            "line3": "e intenta de nuevo."
+          },
+          "errorFetching": "Error al obtener plantillas de reglas de filtro. Inténtalo de nuevo.",
+          "errorTask": "Error al obtener el estado de la tarea de configuración de reglas de filtro. Inténtalo de nuevo.",
+          "errorDetails": "Detalles:",
+          "loadingError": "Algo salió mal!"
+        },
+        "upgradeRemoteFirmwareModal": {
+          "loading": "Obteniendo el estado de la tarea...",
+          "validating": "Validando invisipoints...",
+          "title": "Actualizar firmware remoto",
+          "currentVersion": "Versión actual del firmware:",
+          "tacMessage": "La actualización de firmware remoto está restringido al rol con Solo <b>`TAC-ID`</b>!",
+          "errorUpgrade": "Error al actualizar el firmware remoto. Inténtalo de nuevo.",
+          "bulk1": "El invisipoint seleccionado ya tiene una tarea Actualizar firmware remoto.",
+          "bulk2": "Espere a que se complete antes de intentar actualizar el firmware remoto para este invisipoint de nuevo.",
+          "bulk3": "Todos los invisipoints seleccionados {{ epCheckState }} ya tienen una tarea para actualizar el firmware remoto.",
+          "bulk4": "Espere a que se complete antes de intentar actualizar el control remoto. firmware para este invisipoint de nuevo.",
+          "name": "Nombre",
+          "releaseVersion": "Versión de lanzamiento",
+          "product": "Producto",
+          "cancelButton": "Cancelar",
+          "applyingButton": "Aplicando...",
+          "applyButton": "Aplicar",
+          "uploadButton": "Subir Nuevo Firmware",
+          "emptyMessage": "Subir nuevo firmware para verlo aquí.",
+          "errorFetching": "Error al ver la lista de firmware. Inténtalo de nuevo.",
+          "details": "Detalles",
+          "alert": {
+            "succesTitle": "Información",
+            "errorTitle": "Error",
+            "details": "Detalles del error:",
+            "successMessage": "La solicitud de actualización de firmware remota se ha enviado correctamente.",
+            "errorMessage": "Error al aplicar la actualización de firmware remota. Inténtalo de nuevo."
+          }
+        },
+        "clearFilterrules": {
+          "title": "Borrar Reglas De Filtro",
+          "validation": "Validadando invisipoint${isBulkAction ? `s` : ``}...",
+          "fetching": "Obteniendo el estado de la tarea...",
+          "clearing": "Borrando reglas de filtrado...",
+          "loading": "Cargando",
+          "error": "ERROR !!",
+          "taskCompletedText": "Tarea terminada",
+          "taskInProgress": "Una tarea ya está en curso.",
+          "clearFilterrulesAlert": {
+            "title": "Información",
+            "message": "Solicitud para borrar las reglas de filtro fue enviada. La tarea se ha puesto en cola y se completará en breve.",
+            "taskInProgress": "<p>El invisipoint seleccionado ya tiene una tarea de actualización de políticas. <br /> <br /> Espere a que se complete antes de intentar configurar/borrar las reglas de filtro para este invisipoint nuevamente. </p>",
+            "errorFetching": "Error al obtener el estado de la tarea de borrar reglas de filtro. Inténtalo de nuevo.",
+            "details": "Detalles:",
+            "closeButton": "Cerrar"
+          }
+        },
+        "bulkTable": {
+          "leftTable": "Lista de invisipoint{{ grammerly }} que estarán pendientes",
+          "rightTable": "Lista de invisipoint{{ grammerly }} que serán procesados",
+          "name": "Nombre",
+          "serial": "Número de serie",
+          "reason": "Razón",
+          "version": "Versión de FW",
+          "loading": "Cargando...",
+          "portInvalid": "",
+          "progressTooltip": "Una tarea ya está en curso",
+          "noTac": "Este invisipoint no es un TAC-ID.",
+          "epcDisableTooltip": "Invisipoint esta desactivado",
+          "remoteTooltip": "Clave remota mostrará esta opción como desactivada.",
+          "message": "Haga click en <0>Continuar</0> para proseguir. Haga click en <1>Cancelar</1> para volver a la pantalla invisipoints.",
+          "cancelButton": "Cancelar",
+          "continueButton": "Continuar",
+          "configurRulesError": "Error al configurar las reglas de filtro. Vuelva a intentarlo.\n\nDetalles del error:\n-",
+          "Tool Tip": {
+            "Source IP Title": "La IP de origen es incorrecta",
+            "Destination IP Title": " La IP de destino es incorrecta",
+            "Source Ip Description": "La IP de origen debe ser cualquiera de las siguientes:",
+            "Destination IP Description": "La IP de destino debe ser cualquiera de las siguientes:",
+            "List": {
+              "Ipv4 Octet Section": "<0>Dirección IPv4</0> válida como <1>1.2.3.4</1> con solo secciones de octetos.",
+              "Ipv4 Prefix Range": "<0>Dirección IPv4</0> válida con un rango de prefijo entre 8 y 32, como <1>1.2.3.4/24</1>",
+              "Ipv6 Hextet Section": "<0>Dirección IPv6</0> válida como <1>2001:db8:3333::0:00FF:08</1> con solo secciones hextet.",
+              "Ipv6 Prefix Range": "<0>Dirección IPv6</0> válida con un rango de prefijos entre 48 y 128, como <1>ff00::12ee/56</1>"
+            }
+          }
+        }
+      },
+      "Manage Firmware": {
+        "Upload Button": "Subir Nuevo Firmware",
+        "Upload Firmware File Modal": {
+          "Title": "Subir Archivo",
+          "Line1": "Seleccione el archivo de firmware para subir",
+          "Line2": "(.tgz or tar bal)",
+          "Line3": "Tamaño máximo: 60 MB",
+          "Select Button": "Seleccione Archivo",
+          "Different Button": "Seleccione otro archivo",
+          "File Name": "Nombre del archivo",
+          "Release": "Lanzamiento",
+          "Product": "Producto",
+          "Cancel Button": "Cancelar",
+          "Upload Button": "Subir",
+          "Proccess Uploading": "Procesando el archivo subido...",
+          "Tar": "El archivo seleccionado tiene una extensión incorrecta. Seleccione una ball tar válida",
+          "Type": "El archivo seleccionado tiene un tipo MIME incorrecto. Seleccione una ball tar válida",
+          "Size": "El archivo seleccionado es demasiado grande. Tamaño de archivo máximo permitido: 60 MB",
+          "Task Alert": {
+            "Title": "Tarea terminada",
+            "Message": "Firmware importado con éxito. Puede cerrar este modal o subir otro firmware.",
+            "Ok Button": "Okay"
+          },
+          "Error Alert": {
+            "Title": "ERROR !!",
+            "Message": "Error al importar firmware. Inténtalo de nuevo.",
+            "Details Title": "Detalles:"
+          },
+          "Name Mandatory": "El campo de nombre de archivo es obligatorio",
+          "Regex": "El campo acepta '-' y solo alfanuméricos",
+          "Valid Version": "Proporcione un número de versión válido",
+          "Release Mandatory": "El campo de lanzamiento es obligatorio",
+          "Valid Release": "Ingrese un número de versión de lanzamiento válido, por ejemplo: X.X.X.X",
+          "Release Regex": "El número de versión no puede terminar con '.', por ejemplo: X.X.X.X",
+          "Invalid Version": "Proporcione un número de versión de lanzamiento válido",
+          "Product Mandatory": "El campo del producto es obligatorio",
+          "Product Regex": "Please provide an valid product name, por ejemplo: invisinet-net-apps",
+          "Product Sample": "El campo del producto no puede terminar con '-', XXX-XXX"
+        },
+        "Action Options": {
+          "Header Name": "Acción",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Confirmando eliminación",
+              "Delete Confirm Content": "Has iniciado el proceso de eliminación de este firmware<0 /><0 />Haz clic en <1>Confirmar</1> para eliminarlo; de lo contrario, haz clic en <1>Cancelar</1>.",
+              "Success": "El firmware remoto con el nombre `{{ fileName }}` se eliminó con éxito.",
+              "Error": "Error al eliminar el firmware remoto con el nombre `{{ fileName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Editar filtro",
+            "Delete": "Eliminar filtro"
+          }
+        }
+      },
+      "Task Status": {
+        "Fetch Status": {
+          "Error": {
+            "Title": "Ocurrió un error",
+            "Content": "<0> No se pueden recuperar o cargar más registros del servidor </0> <0> Información del error: </0>"
+          }
+        },
+        "Action Options": {
+          "Header Name": "Acción",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Confirmando eliminación",
+              "Delete Confirm Content": " Has iniciado el proceso de eliminación de esta tarea<0 /><0 />Haz clic en <1>Confirmar</1> para eliminarla; de lo contrario, haz clic en <1>Cancelar</1>.",
+              "Success": "El estado de la tarea del invisipoint `{{ taskStatus }}` se eliminó correctamente.",
+              "Error": "Error al eliminar el estado de la tarea de invisipoint `{{ taskStatus }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Editar estado de tareas",
+            "Delete": "Eliminar estado de tarea"
+          }
+        }
+      },
+      "Log Files": {
+        "Fetch Status": {
+          "Error": {
+            "Title": "Ocurrió un error",
+            "Content": "<0> No se pueden recuperar o cargar más registros del servidor </0> <0> Información del error: </0>"
+          }
+        },
+        "Action Options": {
+          "Header Name": "Acción",
+          "Prompt": {
+            "Delete Status Prompt": {
+              "Delete Confirm Title": "Confirmando eliminación",
+              "Delete Confirm Content": " Ha iniciado el proceso de eliminación de este archivo de registro.<0 /><0 />Haga clic en <1>Confirmar</1> para eliminarlo; de lo contrario, haga clic en <1>Cancelar</1>.",
+              "Success": "El archivo de registro de invisipoint `{{ fileName }}` se eliminó con éxito.",
+              "Error": "Error al eliminar el archivo de registro de invisipoint `{{ fileName }}`. Vuelva a intentarlo.<0 /><0 />Detalles:<0 />"
+            },
+            "Download Status Prompt": {
+              "Errors": {
+                "Invalid Response": "<0>Error al descargar los registros. Vuelva a intentarlo más tarde.</0><1 />Detalles del error:<1 /><0>Se recibió una respuesta no válida.</0>",
+                "Error Details": "<0>Error al descargar los registros. Vuelva a intentarlo más tarde.</0>Detalles del error:<1 />"
+              }
+            }
+          },
+          "Tool Tip": {
+            "Edit": "Editar archivo",
+            "Delete": "Borrar archivo",
+            "Download": "Descargar archivo"
+          }
+        }
+      }
+    },
+    "maintainance": {
+      "reboot": {
+        "haltGateway": {
+          "haltText": "Detener",
+          "title": "Detener {{ console }}",
+          "buttonName": "Detener {{ console }}",
+          "action": {
+            "prompt": {
+              "confirm": {
+                "text": "¿Estás seguro de que quieres detener esto {{ console }}?",
+                "description": "La {{ console }} estará inaccesible hasta que se reinicie {{ type }}.",
+                "continueButton": "Continuar",
+                "cancelButton": "Cancelar"
+              }
+            }
+          },
+          "description": "Detener la {{ console }} hará que se apague y ya no pasará ningún tráfico. La {{ console }} deberá reiniciarse físicamente para pasar el tráfico nuevamente. Si desea continuar, haga clic en el botón Detener {{ console }} a continuación."
+        },
+        "rebootGateway": {
+          "rebootText": "Reiniciar",
+          "title": "Reiniciar {{ console }}",
+          "buttonName": "Reiniciar {{ console }}",
+          "action": {
+            "prompt": {
+              "confirm": {
+                "text": "¿Estás seguro de que quieres reiniciar esto {{ console }}?",
+                "description": "La {{ console }} estará inaccesible hasta que se reinicie {{ type }}.",
+                "continueButton": "Continuar",
+                "cancelButton": "Cancelar"
+              }
+            }
+          },
+          "description": "Reiniciar {{ console }} hará que {{ console }} no pase tráfico temporalmente hasta que se complete el reinicio. Si desea continuar, haga clic en el botón Reiniciar {{ console }} a continuación."
+        }
+      }
+    }
+  }
+}
